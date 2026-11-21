@@ -1,0 +1,202 @@
+{
+  "_doc": "Tunable values of the game engine. Edit freely, then restart the container.",
+  "xp": {
+    "checkin": 5,
+    "mobility": 20,
+    "nutrition": 15,
+    "main": 100,
+    "main_light": 70,
+    "main_recovery": 50,
+    "dungeon": 150,
+    "boss_defeated": 50,
+    "personal_record": 25,
+    "urgent": 40,
+    "redemption": 40,
+    "endurance": 30,
+    "awakening": 100
+  },
+  "level": {
+    "base_cost": 800,
+    "cost_per_level": 200
+  },
+  "streak": {
+    "step": 0.1,
+    "max_multiplier": 1.5
+  },
+  "rotation": ["HAUT", "BAS", "RECAL"],
+  "schedule": {
+    "rest_day": 6,
+    "dungeon_day": 5,
+    "quest_hour": "19:00",
+    "_days": "0 = Monday ... 6 = Sunday"
+  },
+  "quest": {
+    "max_minutes": 25,
+    "init_seconds": 180,
+    "cooldown_seconds": 120,
+    "variable_target_seconds": 300,
+    "rep_seconds": 3,
+    "transition_seconds": 15,
+    "rest_seconds": 60,
+    "superset_rest_seconds": 20,
+    "base_rounds": 3,
+    "min_rounds": 2,
+    "variable_formats": ["EMOM", "ECHELLE", "CHRONO", "AMRAP", "ISO"]
+  },
+  "templates": {
+    "HAUT": {
+      "supersets": [
+        ["push_h", "pull_h"],
+        ["push_v", "pull_v"]
+      ],
+      "variable_pool": ["curl", "triceps", "lateral", "push_h_db"],
+      "iso_pool": ["iso_pushup", "iso_curl", "iso_lateral"]
+    },
+    "BAS": {
+      "supersets": [
+        ["squat", "core_ant"],
+        ["lunge", "hinge"]
+      ],
+      "variable_pool": ["calves", "carry", "core_lat", "anti_rot"],
+      "iso_pool": ["iso_wallsit", "iso_bridge", "core_ant"]
+    },
+    "RECAL": {
+      "supersets": [
+        ["hang", "core_lat"],
+        ["anti_rot", "carry"]
+      ],
+      "variable_pool": ["core_ant", "mob_hips", "mob_thoracic", "mob_shoulders"],
+      "iso_pool": ["core_ant", "hang", "core_lat"]
+    }
+  },
+  "rir": {
+    "by_week": {
+      "1": 3,
+      "2": 2,
+      "3": 1,
+      "4": 3
+    },
+    "deload_sets_ratio": 0.6,
+    "calibration_days": 7,
+    "calibration_steps": 2
+  },
+  "ranges": {
+    "loaded": [8, 15],
+    "bodyweight": [10, 20],
+    "rep_ceiling": 25,
+    "time_step_seconds": 5
+  },
+  "checkin": {
+    "light_threshold": 2,
+    "physio_window_days": 14,
+    "physio_threshold": 3
+  },
+  "safety": {
+    "loaded_hinge_clean_days": 14,
+    "loaded_hinge_core_level": 3
+  },
+  "volume": {
+    "start_sets_per_week": 8,
+    "increase_per_patch": 2,
+    "groups": ["chest", "back", "shoulders", "arms", "quads", "glutes_hams", "core"]
+  },
+  "mobility_quest": {
+    "seconds": 300,
+    "drill_seconds": 60
+  },
+  "recovery_quest": {
+    "seconds": 600
+  },
+  "nutrition": {
+    "protein_per_kg": 1.6,
+    "round_to": 5
+  },
+  "patch": {
+    "days": 28
+  },
+  "placement": {
+    "_doc": "Awakening test value -> starting level. Each entry: [minimum value, level]. target_ratio sets a time target from the test.",
+    "push_h": {
+      "test": "pushups",
+      "levels": [
+        [0, 1],
+        [13, 2],
+        [20, 3],
+        [30, 4]
+      ]
+    },
+    "squat": {
+      "test": "goblet",
+      "levels": [
+        [0, 1],
+        [22, 2],
+        [30, 3]
+      ]
+    },
+    "lunge": {
+      "test": "goblet",
+      "levels": [
+        [0, 1],
+        [15, 2]
+      ]
+    },
+    "core_ant": {
+      "test": "plank",
+      "levels": [
+        [0, 1],
+        [30, 2],
+        [60, 3],
+        [90, 4]
+      ],
+      "target_ratio": 0.6
+    },
+    "core_lat": {
+      "test": "plank",
+      "levels": [
+        [0, 1],
+        [45, 2]
+      ]
+    },
+    "hang": {
+      "test": "hang",
+      "levels": [
+        [0, 1],
+        [8, 2],
+        [18, 3],
+        [28, 4],
+        [40, 5]
+      ]
+    },
+    "mob_hips": {
+      "test": "deep_squat",
+      "levels": [
+        [0, 3],
+        [60, 4],
+        [120, 5]
+      ]
+    }
+  },
+  "mobility_tests": {
+    "_doc": "How each mobility test maps to a zone. score = (value - worst) / (best - worst), clamped 0..1.",
+    "deep_squat": {
+      "zone": "mob_hips",
+      "worst": 0,
+      "best": 120
+    },
+    "toe_touch": {
+      "zone": "mob_hams",
+      "worst": 25,
+      "best": -10
+    },
+    "knee_wall": {
+      "zone": "mob_ankles",
+      "worst": 0,
+      "best": 12
+    },
+    "hands_back": {
+      "zone": "mob_shoulders",
+      "worst": 25,
+      "best": -5
+    }
+  }
+}

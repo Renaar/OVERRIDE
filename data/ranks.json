@@ -1,0 +1,37 @@
+{
+  "_doc": "Rank trials. A trial passes if ANY option passes; an option passes if ALL its conditions pass. Body metrics are gains since the Awakening. 3 trials out of 4 are needed.",
+  "required_trials": 3,
+  "ranks": [
+    {"id": "E", "color": "#8A94A6", "trials": []},
+    {"id": "D", "color": "#3DFFB0", "trials": [
+      {"label": "20 pompes strictes", "options": [[{"metric": "pushups", "min": 20}]]},
+      {"label": "+1 cm de tour de bras", "options": [[{"metric": "arm_gain_cm", "min": 1}]]},
+      {"label": "Accroupi profond talons au sol 1 min", "options": [[{"metric": "deep_squat_s", "min": 60}]]},
+      {"label": "Planche 60 s", "options": [[{"metric": "plank_s", "min": 60}]]}
+    ]},
+    {"id": "C", "color": "#38D6FF", "trials": [
+      {"label": "30 pompes ou 3 tractions", "options": [[{"metric": "pushups", "min": 30}], [{"metric": "pullups", "min": 3}]]},
+      {"label": "+2 kg avec taille ≤ +2 cm", "options": [[{"metric": "weight_gain_kg", "min": 2}, {"metric": "waist_gain_cm", "max": 2}]]},
+      {"label": "Doigts au sol jambes tendues", "options": [[{"metric": "toe_touch_cm", "max": 0}]]},
+      {"label": "Suspension 45 s", "options": [[{"metric": "hang_s", "min": 45}]]}
+    ]},
+    {"id": "B", "color": "#A06BFF", "trials": [
+      {"label": "40 pompes ou 8 tractions", "options": [[{"metric": "pushups", "min": 40}], [{"metric": "pullups", "min": 8}]]},
+      {"label": "+2 cm de tour de bras", "options": [[{"metric": "arm_gain_cm", "min": 2}]]},
+      {"label": "5 squats cosaques complets par côté", "options": [[{"metric": "cossack_reps", "min": 5}]]},
+      {"label": "Planche latérale 60 s par côté", "options": [[{"metric": "side_plank_s", "min": 60}]]}
+    ]},
+    {"id": "A", "color": "#FFD166", "trials": [
+      {"label": "12 tractions", "options": [[{"metric": "pullups", "min": 12}]]},
+      {"label": "+4 kg avec taille ≤ +3 cm", "options": [[{"metric": "weight_gain_kg", "min": 4}, {"metric": "waist_gain_cm", "max": 3}]]},
+      {"label": "Paumes au sol jambes tendues", "options": [[{"metric": "palms_floor", "min": 1}]]},
+      {"label": "Marche du fermier 60 s, 2 × 20 kg ou plus", "options": [[{"metric": "farmer_20kg_s", "min": 60}]]}
+    ]},
+    {"id": "S", "color": "#FF3D6E", "trials": [
+      {"label": "20 tractions ou 3 tractions lestées à +10 kg", "options": [[{"metric": "pullups", "min": 20}], [{"metric": "weighted_pullups_10kg", "min": 3}]]},
+      {"label": "+6 kg avec taille ≤ +3 cm", "options": [[{"metric": "weight_gain_kg", "min": 6}, {"metric": "waist_gain_cm", "max": 3}]]},
+      {"label": "5 squats sur une jambe complets par côté", "options": [[{"metric": "pistol_reps", "min": 5}]]},
+      {"label": "Suspension 90 s", "options": [[{"metric": "hang_s", "min": 90}]]}
+    ]}
+  ]
+}

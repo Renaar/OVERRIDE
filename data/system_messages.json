@@ -1,0 +1,397 @@
+{
+  "_doc": "System message library. ranks = [min, max]. conditions: {var: {min|max|eq: value}}. Text variables use {name}.",
+  "messages": [
+    {
+      "id": "awakening_done_01",
+      "event": "awakening_done",
+      "ranks": ["E", "S"],
+      "conditions": {},
+      "vars": ["name"],
+      "text": "[SYSTÈME] Initialisation terminée. Joueur : {name}. Version : v1.0. Rang : E. Le code peut commencer à se réécrire."
+    },
+    {
+      "id": "awakening_done_02",
+      "event": "awakening_done",
+      "ranks": ["E", "S"],
+      "conditions": {},
+      "vars": ["name"],
+      "text": "[SYSTÈME] Éveil confirmé. {name} v1.0 en ligne. Données de référence enregistrées. Chaque séance écrira la suite."
+    },
+    {
+      "id": "awakening_done_03",
+      "event": "awakening_done",
+      "ranks": ["E", "S"],
+      "conditions": {},
+      "vars": [],
+      "text": "[SYSTÈME] Calibration initiale terminée. Point de départ : enregistré. Destination : la meilleure version de toi."
+    },
+    {
+      "id": "briefing_01",
+      "event": "briefing",
+      "ranks": ["E", "E"],
+      "conditions": {},
+      "vars": ["minutes", "quest_label"],
+      "text": "[SYSTÈME] Analyse terminée. Quête du jour : {quest_label} · {minutes} min."
+    },
+    {
+      "id": "briefing_02",
+      "event": "briefing",
+      "ranks": ["E", "E"],
+      "conditions": {},
+      "vars": ["minutes", "quest_label"],
+      "text": "[SYSTÈME] Quête générée. {quest_label}. Durée estimée : {minutes} min. Exécution attendue."
+    },
+    {
+      "id": "briefing_03",
+      "event": "briefing",
+      "ranks": ["E", "E"],
+      "conditions": {},
+      "vars": ["minutes", "quest_label", "rir"],
+      "text": "[SYSTÈME] Paramètres chargés. {quest_label} · {minutes} min. RIR cible : {rir}."
+    },
+    {
+      "id": "briefing_04",
+      "event": "briefing",
+      "ranks": ["E", "E"],
+      "conditions": {
+        "calibration": {
+          "eq": 1
+        }
+      },
+      "vars": [],
+      "text": "[SYSTÈME] Semaine de calibration. RIR cible 3. Ajuste les charges : je mesure."
+    },
+    {
+      "id": "briefing_05",
+      "event": "briefing",
+      "ranks": ["E", "E"],
+      "conditions": {
+        "streak": {
+          "min": 3
+        }
+      },
+      "vars": ["multiplier", "quest_label", "streak"],
+      "text": "[SYSTÈME] Série active : {streak} jours. Multiplicateur ×{multiplier}. Quête : {quest_label}."
+    },
+    {
+      "id": "briefing_06",
+      "event": "briefing",
+      "ranks": ["D", "C"],
+      "conditions": {},
+      "vars": ["minutes", "quest_label"],
+      "text": "[SYSTÈME] Briefing du soir. {quest_label}, {minutes} min. Tu connais la procédure. Je compte sur la régularité."
+    },
+    {
+      "id": "briefing_07",
+      "event": "briefing",
+      "ranks": ["D", "C"],
+      "conditions": {},
+      "vars": ["minutes", "quest_label"],
+      "text": "[SYSTÈME] Quête du jour prête : {quest_label} · {minutes} min. Hier compte. Aujourd'hui aussi."
+    },
+    {
+      "id": "briefing_08",
+      "event": "briefing",
+      "ranks": ["D", "C"],
+      "conditions": {
+        "streak": {
+          "min": 5
+        }
+      },
+      "vars": ["multiplier", "streak"],
+      "text": "[SYSTÈME] {streak} jours d'affilée. Multiplicateur ×{multiplier}. Ne casse pas la boucle."
+    },
+    {
+      "id": "briefing_09",
+      "event": "briefing",
+      "ranks": ["D", "C"],
+      "conditions": {
+        "calibration": {
+          "eq": 1
+        }
+      },
+      "vars": [],
+      "text": "[SYSTÈME] Calibration en cours. Note honnêtement tes répétitions en réserve : mes calculs en dépendent."
+    },
+    {
+      "id": "briefing_10",
+      "event": "briefing",
+      "ranks": ["B", "S"],
+      "conditions": {},
+      "vars": ["minutes", "name", "quest_label"],
+      "text": "[SYSTÈME] {name}. {quest_label}, {minutes} min. On a fait du chemin ensemble. On continue."
+    },
+    {
+      "id": "briefing_11",
+      "event": "briefing",
+      "ranks": ["B", "S"],
+      "conditions": {},
+      "vars": ["quest_label"],
+      "text": "[SYSTÈME] Quête prête : {quest_label}. Je t'ai vu monter jusqu'ici. Montre-moi la suite."
+    },
+    {
+      "id": "briefing_12",
+      "event": "briefing",
+      "ranks": ["B", "S"],
+      "conditions": {
+        "streak": {
+          "min": 7
+        }
+      },
+      "vars": ["streak"],
+      "text": "[SYSTÈME] {streak} jours sans faille. Je n'ai plus besoin de te pousser. Je t'accompagne."
+    },
+    {
+      "id": "checkin_light_01",
+      "event": "checkin_light",
+      "ranks": ["E", "E"],
+      "conditions": {},
+      "vars": [],
+      "text": "[SYSTÈME] Signaux de fatigue détectés. Quête allégée générée. Récupérer fait partie du protocole."
+    },
+    {
+      "id": "checkin_light_02",
+      "event": "checkin_light",
+      "ranks": ["E", "E"],
+      "conditions": {},
+      "vars": [],
+      "text": "[SYSTÈME] Sommeil insuffisant détecté. Quête allégée générée. Récupérer fait partie du protocole."
+    },
+    {
+      "id": "checkin_light_03",
+      "event": "checkin_light",
+      "ranks": ["D", "C"],
+      "conditions": {},
+      "vars": [],
+      "text": "[SYSTÈME] Batterie basse. J'ai réduit le volume d'une série par exercice. Le progrès se construit aussi les jours moyens."
+    },
+    {
+      "id": "checkin_light_04",
+      "event": "checkin_light",
+      "ranks": ["B", "S"],
+      "conditions": {},
+      "vars": [],
+      "text": "[SYSTÈME] Journée difficile, je le vois. Version allégée prête. Les champions savent doser."
+    },
+    {
+      "id": "checkin_tense_01",
+      "event": "checkin_tense",
+      "ranks": ["E", "S"],
+      "conditions": {},
+      "vars": [],
+      "text": "[SYSTÈME] Dos tendu signalé. Charnière chargée retirée. Priorité : gainage et mobilité."
+    },
+    {
+      "id": "checkin_tense_02",
+      "event": "checkin_tense",
+      "ranks": ["D", "S"],
+      "conditions": {},
+      "vars": [],
+      "text": "[SYSTÈME] Dos tendu. J'ai remplacé la charnière par du gainage. On protège la colonne d'abord, le reste suit."
+    },
+    {
+      "id": "checkin_recovery_01",
+      "event": "checkin_recovery",
+      "ranks": ["E", "S"],
+      "conditions": {},
+      "vars": [],
+      "text": "[SYSTÈME] Douleur au dos signalée. Quête de récupération : 10 min de mobilité douce. Aucune pénalité."
+    },
+    {
+      "id": "checkin_recovery_02",
+      "event": "checkin_recovery",
+      "ranks": ["D", "S"],
+      "conditions": {},
+      "vars": [],
+      "text": "[SYSTÈME] Protocole de récupération activé. 10 minutes, en douceur. Aucune pénalité : ce n'est pas un recul."
+    },
+    {
+      "id": "checkin_good_01",
+      "event": "checkin_good",
+      "ranks": ["E", "E"],
+      "conditions": {},
+      "vars": [],
+      "text": "[SYSTÈME] Check-in nominal. Tous les systèmes sont au vert."
+    },
+    {
+      "id": "checkin_good_02",
+      "event": "checkin_good",
+      "ranks": ["D", "S"],
+      "conditions": {},
+      "vars": [],
+      "text": "[SYSTÈME] Bon sommeil, bonne énergie, dos OK. Conditions idéales. Profite-en."
+    },
+    {
+      "id": "quest_report_01",
+      "event": "quest_report",
+      "ranks": ["E", "E"],
+      "conditions": {},
+      "vars": ["sets", "xp"],
+      "text": "[SYSTÈME] Quête terminée. {sets} séries validées. +{xp} XP. Le code se réécrit."
+    },
+    {
+      "id": "quest_report_02",
+      "event": "quest_report",
+      "ranks": ["E", "E"],
+      "conditions": {},
+      "vars": ["minutes", "sets", "xp"],
+      "text": "[SYSTÈME] Exécution complète. {sets} séries · {minutes} min. +{xp} XP."
+    },
+    {
+      "id": "quest_report_03",
+      "event": "quest_report",
+      "ranks": ["E", "E"],
+      "conditions": {
+        "light": {
+          "eq": 1
+        }
+      },
+      "vars": ["xp"],
+      "text": "[SYSTÈME] Quête allégée terminée. +{xp} XP. Une séance faite vaut mieux qu'une séance parfaite."
+    },
+    {
+      "id": "quest_report_04",
+      "event": "quest_report",
+      "ranks": ["D", "C"],
+      "conditions": {},
+      "vars": ["minutes", "sets", "xp"],
+      "text": "[SYSTÈME] Quête validée : {sets} séries en {minutes} min. +{xp} XP. Tu tiens le rythme."
+    },
+    {
+      "id": "quest_report_05",
+      "event": "quest_report",
+      "ranks": ["D", "C"],
+      "conditions": {
+        "streak": {
+          "min": 3
+        }
+      },
+      "vars": ["streak", "xp"],
+      "text": "[SYSTÈME] +{xp} XP. Série de {streak} jours. La régularité est ton meilleur exercice."
+    },
+    {
+      "id": "quest_report_06",
+      "event": "quest_report",
+      "ranks": ["B", "S"],
+      "conditions": {},
+      "vars": ["name", "sets", "xp"],
+      "text": "[SYSTÈME] Bien joué, {name}. {sets} séries, +{xp} XP. Chaque séance réécrit une ligne de plus."
+    },
+    {
+      "id": "quest_report_07",
+      "event": "quest_report",
+      "ranks": ["E", "S"],
+      "conditions": {
+        "pain": {
+          "min": 1
+        }
+      },
+      "vars": ["pain"],
+      "text": "[SYSTÈME] Douleur notée sur {pain} exercice(s). Je l'enregistre et j'adapte la suite."
+    },
+    {
+      "id": "recovery_report_01",
+      "event": "recovery_report",
+      "ranks": ["E", "S"],
+      "conditions": {},
+      "vars": ["xp"],
+      "text": "[SYSTÈME] Récupération terminée. +{xp} XP. Le corps se répare : c'est aussi de l'entraînement."
+    },
+    {
+      "id": "mobility_report_01",
+      "event": "mobility_report",
+      "ranks": ["E", "S"],
+      "conditions": {},
+      "vars": ["xp", "zone"],
+      "text": "[SYSTÈME] Quête de mobilité validée. +{xp} XP. Zone prioritaire : {zone}."
+    },
+    {
+      "id": "level_up_01",
+      "event": "level_up",
+      "ranks": ["E", "E"],
+      "conditions": {},
+      "vars": ["level"],
+      "text": "[SYSTÈME] NIVEAU {level} ATTEINT. Point de Focus +1."
+    },
+    {
+      "id": "level_up_02",
+      "event": "level_up",
+      "ranks": ["E", "E"],
+      "conditions": {},
+      "vars": ["level"],
+      "text": "[SYSTÈME] Montée de niveau : {level}. Performances en hausse. Point de Focus disponible."
+    },
+    {
+      "id": "level_up_03",
+      "event": "level_up",
+      "ranks": ["D", "C"],
+      "conditions": {},
+      "vars": ["level"],
+      "text": "[SYSTÈME] Niveau {level}. Tu progresses plus vite que prévu. Un point de Focus t'attend."
+    },
+    {
+      "id": "level_up_04",
+      "event": "level_up",
+      "ranks": ["B", "S"],
+      "conditions": {},
+      "vars": ["level", "name"],
+      "text": "[SYSTÈME] Niveau {level}, {name}. Je me souviens du niveau 1. Regarde où on en est."
+    },
+    {
+      "id": "status_idle_01",
+      "event": "status_idle",
+      "ranks": ["E", "E"],
+      "conditions": {},
+      "vars": [],
+      "text": "[SYSTÈME] En attente du check-in."
+    },
+    {
+      "id": "status_idle_02",
+      "event": "status_idle",
+      "ranks": ["E", "E"],
+      "conditions": {},
+      "vars": [],
+      "text": "[SYSTÈME] Système en veille. Quête du jour disponible."
+    },
+    {
+      "id": "status_idle_03",
+      "event": "status_idle",
+      "ranks": ["D", "S"],
+      "conditions": {},
+      "vars": [],
+      "text": "[SYSTÈME] Je suis prêt quand tu l'es. La quête du jour t'attend."
+    },
+    {
+      "id": "status_done_01",
+      "event": "status_done",
+      "ranks": ["E", "E"],
+      "conditions": {},
+      "vars": [],
+      "text": "[SYSTÈME] Quête du jour terminée. Récupération en cours."
+    },
+    {
+      "id": "status_done_02",
+      "event": "status_done",
+      "ranks": ["D", "S"],
+      "conditions": {},
+      "vars": [],
+      "text": "[SYSTÈME] Mission accomplie pour aujourd'hui. Dors bien : c'est là que le code se compile."
+    },
+    {
+      "id": "status_rest_01",
+      "event": "status_rest",
+      "ranks": ["E", "E"],
+      "conditions": {},
+      "vars": [],
+      "text": "[SYSTÈME] Jour de repos. Les muscles se reconstruisent. Aucune quête principale."
+    },
+    {
+      "id": "status_rest_02",
+      "event": "status_rest",
+      "ranks": ["D", "S"],
+      "conditions": {},
+      "vars": [],
+      "text": "[SYSTÈME] Repos programmé. Profite : la croissance se passe maintenant."
+    }
+  ]
+}

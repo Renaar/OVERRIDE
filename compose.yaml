@@ -1,0 +1,22 @@
+services:
+  override:
+    build: .
+    image: override:latest
+    container_name: override
+    restart: unless-stopped
+    ports:
+      - "${OVERRIDE_PORT:-8087}:8087"
+    environment:
+      TZ: Europe/Zurich
+      APP_NAME: OVERRIDE
+      # Notifications ntfy (phase 4) : laisse vide pour désactiver
+      NTFY_URL: ""
+      NTFY_TOPIC: ""
+    volumes:
+      - ./data:/app/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request;urllib.request.urlopen('http://127.0.0.1:8087/healthz',timeout=4)"]
+      interval: 60s
+      timeout: 5s
+      start_period: 20s
+      retries: 3

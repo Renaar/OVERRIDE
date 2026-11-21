@@ -1,0 +1,1724 @@
+{
+  "_doc": "Skill tree. Equipment: BW none, H dumbbells, P hangboard, BT pull-up bar, EL bands, HL heavy dumbbells, BC adjustable bench, GL weighted vest.",
+  "equipment": {
+    "H": "Haltères réglables",
+    "P": "Planche de suspension",
+    "BT": "Barre de traction",
+    "EL": "Élastiques",
+    "HL": "Haltères lourds",
+    "BC": "Banc réglable",
+    "GL": "Gilet lesté"
+  },
+  "groups": {
+    "chest": "Pectoraux",
+    "back": "Dos",
+    "shoulders": "Épaules",
+    "arms": "Bras",
+    "quads": "Quadriceps",
+    "glutes_hams": "Fessiers-ischios",
+    "core": "Gainage"
+  },
+  "families": [
+    {
+      "id": "push_h",
+      "name": "Pousser horizontal",
+      "category": "main",
+      "pattern": "push",
+      "variants": [
+        {
+          "id": "push_h_1",
+          "level": 1,
+          "name": "Pompes mains surélevées",
+          "groups": ["chest"],
+          "type": "reps",
+          "range": [10, 20],
+          "equipment": [],
+          "cues": ["Mains sur une table ou un plan de travail", "Corps gainé de la tête aux talons", "Poitrine jusqu'au rebord"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none"
+        },
+        {
+          "id": "push_h_2",
+          "level": 2,
+          "name": "Pompes au sol",
+          "groups": ["chest"],
+          "type": "reps",
+          "range": [10, 20],
+          "equipment": [],
+          "cues": ["Mains sous les épaules", "Coudes à 45° du corps", "Poitrine à un poing du sol"],
+          "back_note": "Fesses serrées : le bas du dos ne doit pas creuser.",
+          "video_url": "",
+          "load_mode": "none"
+        },
+        {
+          "id": "push_h_3",
+          "level": 3,
+          "name": "Pompes tempo 3-1-1",
+          "groups": ["chest"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": [],
+          "cues": ["Descente en 3 s", "Pause 1 s en bas", "Montée en 1 s"],
+          "back_note": "Fesses serrées : le bas du dos ne doit pas creuser.",
+          "video_url": "",
+          "load_mode": "none",
+          "rep_s": 5
+        },
+        {
+          "id": "push_h_4",
+          "level": 4,
+          "name": "Pompes pieds surélevés",
+          "groups": ["chest"],
+          "type": "reps",
+          "range": [10, 20],
+          "equipment": [],
+          "cues": ["Pieds sur une chaise", "Corps gainé", "Coudes à 45°"],
+          "back_note": "Fesses serrées : le bas du dos ne doit pas creuser.",
+          "video_url": "",
+          "load_mode": "none"
+        },
+        {
+          "id": "push_h_5",
+          "level": 5,
+          "name": "Pompes en déficit sur haltères",
+          "groups": ["chest"],
+          "type": "reps",
+          "range": [10, 20],
+          "equipment": ["H"],
+          "cues": ["Mains sur les haltères posés au sol", "Descends sous le niveau des mains", "Amplitude contrôlée"],
+          "back_note": "Fesses serrées : le bas du dos ne doit pas creuser.",
+          "video_url": "",
+          "load_mode": "none"
+        },
+        {
+          "id": "push_h_6",
+          "level": 6,
+          "name": "Pompes archer",
+          "groups": ["chest"],
+          "type": "reps",
+          "range": [6, 12],
+          "equipment": [],
+          "cues": ["Mains très écartées", "Descends vers un bras, l'autre reste tendu", "Alterne les côtés"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none"
+        },
+        {
+          "id": "push_h_7",
+          "level": 7,
+          "name": "Pompes lestées",
+          "groups": ["chest"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["GL"],
+          "cues": ["Gilet bien ajusté", "Même technique que les pompes au sol", "Gainage maximal"],
+          "back_note": "Fesses serrées : le bas du dos ne doit pas creuser.",
+          "video_url": "",
+          "load_mode": "none"
+        }
+      ]
+    },
+    {
+      "id": "push_h_db",
+      "name": "Développé (branche)",
+      "category": "accessory",
+      "pattern": "push",
+      "branch_of": "push_h",
+      "variants": [
+        {
+          "id": "push_h_db_1",
+          "level": 1,
+          "name": "Développé au sol",
+          "groups": ["chest"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["H"],
+          "cues": ["Allongé, genoux pliés", "Coudes touchent le sol doucement", "Pousse vers le plafond"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "pair",
+          "start_load_ratio": 1.0
+        },
+        {
+          "id": "push_h_db_2",
+          "level": 2,
+          "name": "Développé couché",
+          "groups": ["chest"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["BC", "HL"],
+          "cues": ["Omoplates serrées sur le banc", "Pieds ancrés au sol", "Descente contrôlée"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "pair",
+          "start_load_ratio": 0.6
+        }
+      ]
+    },
+    {
+      "id": "pull_h",
+      "name": "Tirer horizontal",
+      "category": "main",
+      "pattern": "pull",
+      "variants": [
+        {
+          "id": "pull_h_1",
+          "level": 1,
+          "name": "Rowing un bras, appui sur une chaise",
+          "groups": ["back"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["H"],
+          "cues": ["Main et genou sur la chaise", "Tire le coude vers la hanche", "Omoplate en arrière en haut"],
+          "back_note": "Dos neutre : côtes basses, bassin ni creusé ni enroulé.",
+          "video_url": "",
+          "load_mode": "single",
+          "unilateral": true,
+          "start_load_ratio": 1.0
+        },
+        {
+          "id": "pull_h_2",
+          "level": 2,
+          "name": "Rowing tempo (descente 4 s, pause 2 s)",
+          "groups": ["back"],
+          "type": "reps",
+          "range": [8, 12],
+          "equipment": ["H"],
+          "cues": ["Pause 2 s en haut", "Descente en 4 s", "Pas d'élan"],
+          "back_note": "Dos neutre : côtes basses, bassin ni creusé ni enroulé.",
+          "video_url": "",
+          "load_mode": "single",
+          "unilateral": true,
+          "rep_s": 7,
+          "start_load_ratio": 1.0
+        },
+        {
+          "id": "pull_h_3",
+          "level": 3,
+          "name": "Rowing appui poitrine, banc incliné",
+          "groups": ["back"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["BC", "HL"],
+          "cues": ["Poitrine collée au banc", "Coudes vers l'arrière", "Serre les omoplates"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "pair",
+          "start_load_ratio": 0.6
+        },
+        {
+          "id": "pull_h_4",
+          "level": 4,
+          "name": "Rowing un bras lourd",
+          "groups": ["back"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["HL"],
+          "cues": ["Appui stable", "Tire le coude vers la hanche", "Pas de rotation du buste"],
+          "back_note": "Dos neutre : côtes basses, bassin ni creusé ni enroulé.",
+          "video_url": "",
+          "load_mode": "single",
+          "unilateral": true,
+          "start_load_ratio": 0.7
+        }
+      ]
+    },
+    {
+      "id": "pull_h_band",
+      "name": "Tirage élastique (branche)",
+      "category": "accessory",
+      "pattern": "pull",
+      "branch_of": "pull_h",
+      "variants": [
+        {
+          "id": "pull_h_band_1",
+          "level": 1,
+          "name": "Tirage à l'élastique",
+          "groups": ["back"],
+          "type": "reps",
+          "range": [10, 20],
+          "equipment": ["EL"],
+          "cues": ["Élastique à hauteur de poitrine", "Coudes près du corps", "Serre les omoplates 1 s"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none"
+        }
+      ]
+    },
+    {
+      "id": "push_v",
+      "name": "Pousser vertical",
+      "category": "main",
+      "pattern": "push",
+      "variants": [
+        {
+          "id": "push_v_1",
+          "level": 1,
+          "name": "Développé épaules assis",
+          "groups": ["shoulders"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["H"],
+          "cues": ["Assis, dos contre un dossier", "Haltères au niveau des oreilles", "Pousse au-dessus de la tête"],
+          "back_note": "Ne creuse pas le dos en poussant : côtes basses.",
+          "video_url": "",
+          "load_mode": "pair",
+          "start_load_ratio": 0.7
+        },
+        {
+          "id": "push_v_2",
+          "level": 2,
+          "name": "Pompes pike",
+          "groups": ["shoulders"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": [],
+          "cues": ["Bassin haut, forme de V inversé", "Tête vers le sol entre les mains", "Coudes vers l'arrière"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none"
+        },
+        {
+          "id": "push_v_3",
+          "level": 3,
+          "name": "Pompes pike pieds surélevés",
+          "groups": ["shoulders"],
+          "type": "reps",
+          "range": [6, 12],
+          "equipment": [],
+          "cues": ["Pieds sur une chaise", "Hanches au-dessus des épaules", "Descente contrôlée"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none"
+        },
+        {
+          "id": "push_v_4",
+          "level": 4,
+          "name": "Développé assis lourd",
+          "groups": ["shoulders"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["BC", "HL"],
+          "cues": ["Banc à la verticale", "Côtes basses", "Pousse au-dessus de la tête"],
+          "back_note": "Ne creuse pas le dos en poussant : côtes basses.",
+          "video_url": "",
+          "load_mode": "pair",
+          "start_load_ratio": 0.6
+        }
+      ]
+    },
+    {
+      "id": "pull_v",
+      "name": "Tirer vertical",
+      "category": "main",
+      "pattern": "pull",
+      "variants": [
+        {
+          "id": "pull_v_1",
+          "level": 1,
+          "name": "Élévations scapulaires en suspension",
+          "groups": ["back"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["P"],
+          "cues": ["Grandes prises uniquement", "Bras tendus, monte en serrant les omoplates", "Redescends lentement"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none"
+        },
+        {
+          "id": "pull_v_2",
+          "level": 2,
+          "name": "Pullover au sol",
+          "groups": ["back"],
+          "type": "reps",
+          "range": [10, 20],
+          "equipment": ["H"],
+          "cues": ["Allongé, un haltère tenu à deux mains", "Bras presque tendus vers l'arrière", "Ramène au-dessus de la poitrine"],
+          "back_note": "Garde le bas du dos plaqué au sol.",
+          "video_url": "",
+          "load_mode": "single",
+          "start_load_ratio": 0.8
+        },
+        {
+          "id": "pull_v_3",
+          "level": 3,
+          "name": "Tractions négatives",
+          "groups": ["back"],
+          "type": "reps",
+          "range": [3, 6],
+          "equipment": ["BT"],
+          "cues": ["Saute en haut de la barre", "Descends en 4 à 5 s", "Bras tendus en bas"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none"
+        },
+        {
+          "id": "pull_v_4",
+          "level": 4,
+          "name": "Tractions assistées",
+          "groups": ["back"],
+          "type": "reps",
+          "range": [5, 10],
+          "equipment": ["BT", "EL"],
+          "cues": ["Élastique sous le pied ou le genou", "Menton au-dessus de la barre", "Descente contrôlée"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none"
+        },
+        {
+          "id": "pull_v_5",
+          "level": 5,
+          "name": "Tractions strictes",
+          "groups": ["back"],
+          "type": "reps",
+          "range": [3, 10],
+          "equipment": ["BT"],
+          "cues": ["Pars bras tendus", "Menton au-dessus de la barre", "Pas d'élan"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none"
+        },
+        {
+          "id": "pull_v_6",
+          "level": 6,
+          "name": "Tractions lestées",
+          "groups": ["back"],
+          "type": "reps",
+          "range": [3, 8],
+          "equipment": ["BT", "GL"],
+          "cues": ["Gilet bien ajusté", "Amplitude complète", "Pas d'élan"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none"
+        }
+      ]
+    },
+    {
+      "id": "squat",
+      "name": "Squat",
+      "category": "main",
+      "pattern": "squat",
+      "variants": [
+        {
+          "id": "squat_1",
+          "level": 1,
+          "name": "Squat gobelet",
+          "groups": ["quads"],
+          "type": "reps",
+          "range": [10, 20],
+          "equipment": ["H"],
+          "cues": ["Haltère contre la poitrine", "Genoux dans l'axe des pieds", "Descends entre les talons"],
+          "back_note": "Poitrine fière, dos neutre en bas.",
+          "video_url": "",
+          "load_mode": "single",
+          "start_load_ratio": 1.0
+        },
+        {
+          "id": "squat_2",
+          "level": 2,
+          "name": "Squat gobelet tempo 3-1-1",
+          "groups": ["quads"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["H"],
+          "cues": ["Descente en 3 s", "Pause 1 s", "Remonte en 1 s"],
+          "back_note": "Poitrine fière, dos neutre en bas.",
+          "video_url": "",
+          "load_mode": "single",
+          "rep_s": 5,
+          "start_load_ratio": 1.0
+        },
+        {
+          "id": "squat_3",
+          "level": 3,
+          "name": "Squat gobelet pause 2 s",
+          "groups": ["quads"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["H"],
+          "cues": ["Pause 2 s en bas, gainé", "Genoux vers l'extérieur", "Remonte d'un bloc"],
+          "back_note": "Poitrine fière, dos neutre en bas.",
+          "video_url": "",
+          "load_mode": "single",
+          "rep_s": 5,
+          "start_load_ratio": 1.0
+        },
+        {
+          "id": "squat_4",
+          "level": 4,
+          "name": "Squat 1,5",
+          "groups": ["quads"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["H"],
+          "cues": ["Descends, remonte à mi-hauteur, redescends", "Puis remonte en haut : 1 répétition", "Rythme régulier"],
+          "back_note": "Poitrine fière, dos neutre en bas.",
+          "video_url": "",
+          "load_mode": "single",
+          "rep_s": 6,
+          "start_load_ratio": 1.0
+        },
+        {
+          "id": "squat_5",
+          "level": 5,
+          "name": "Squat sur un pied jusqu'à une boîte",
+          "groups": ["quads"],
+          "type": "reps",
+          "range": [5, 10],
+          "equipment": [],
+          "cues": ["Assieds-toi sur une boîte ou une chaise", "Sur une jambe, bras devant", "Remonte sans élan"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none",
+          "unilateral": true,
+          "rep_s": 4
+        },
+        {
+          "id": "squat_6",
+          "level": 6,
+          "name": "Squat gobelet lourd",
+          "groups": ["quads"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["HL"],
+          "cues": ["Haltère lourd contre la poitrine", "Genoux dans l'axe", "Gainage maximal"],
+          "back_note": "Poitrine fière, dos neutre en bas.",
+          "video_url": "",
+          "load_mode": "single",
+          "start_load_ratio": 0.8
+        }
+      ]
+    },
+    {
+      "id": "lunge",
+      "name": "Fente",
+      "category": "main",
+      "pattern": "squat",
+      "variants": [
+        {
+          "id": "lunge_1",
+          "level": 1,
+          "name": "Fente arrière",
+          "groups": ["quads", "glutes_hams"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": [],
+          "cues": ["Grand pas en arrière", "Genou arrière vers le sol", "Pousse avec le talon avant"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none",
+          "unilateral": true
+        },
+        {
+          "id": "lunge_2",
+          "level": 2,
+          "name": "Fente arrière avec haltères",
+          "groups": ["quads", "glutes_hams"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["H"],
+          "cues": ["Un haltère dans chaque main", "Buste droit", "Genou arrière frôle le sol"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "pair",
+          "unilateral": true,
+          "start_load_ratio": 0.8
+        },
+        {
+          "id": "lunge_3",
+          "level": 3,
+          "name": "Squat bulgare",
+          "groups": ["quads", "glutes_hams"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["H"],
+          "cues": ["Pied arrière sur une chaise", "Descends à la verticale", "Genou avant dans l'axe"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "pair",
+          "unilateral": true,
+          "start_load_ratio": 0.6
+        },
+        {
+          "id": "lunge_4",
+          "level": 4,
+          "name": "Squat bulgare, descente en 3 s",
+          "groups": ["quads", "glutes_hams"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["H"],
+          "cues": ["Descente en 3 s", "Remonte d'un bloc", "Buste légèrement penché"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "pair",
+          "unilateral": true,
+          "rep_s": 5,
+          "start_load_ratio": 0.6
+        },
+        {
+          "id": "lunge_5",
+          "level": 5,
+          "name": "Squat bulgare en déficit",
+          "groups": ["quads", "glutes_hams"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["H"],
+          "cues": ["Pied avant sur un step ou un livre épais", "Amplitude maximale", "Contrôle en bas"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "pair",
+          "unilateral": true,
+          "start_load_ratio": 0.6
+        },
+        {
+          "id": "lunge_6",
+          "level": 6,
+          "name": "Squat bulgare lourd",
+          "groups": ["quads", "glutes_hams"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["HL"],
+          "cues": ["Haltères lourds", "Descente contrôlée", "Genou avant dans l'axe"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "pair",
+          "unilateral": true,
+          "start_load_ratio": 0.6
+        }
+      ]
+    },
+    {
+      "id": "hinge",
+      "name": "Charnière",
+      "category": "main",
+      "pattern": "hinge",
+      "variants": [
+        {
+          "id": "hinge_1",
+          "level": 1,
+          "name": "Pont fessier",
+          "groups": ["glutes_hams"],
+          "type": "reps",
+          "range": [10, 20],
+          "equipment": ["H"],
+          "cues": ["Haltère posé sur les hanches", "Pousse avec les talons", "Serre les fessiers 1 s en haut"],
+          "back_note": "Monte avec les fessiers, pas en creusant le dos.",
+          "video_url": "",
+          "load_mode": "single",
+          "start_load_ratio": 1.0
+        },
+        {
+          "id": "hinge_2",
+          "level": 2,
+          "name": "Hip thrust, épaules sur le canapé",
+          "groups": ["glutes_hams"],
+          "type": "reps",
+          "range": [10, 20],
+          "equipment": ["H"],
+          "cues": ["Haut du dos sur le canapé", "Menton rentré", "Tibias verticaux en haut"],
+          "back_note": "Monte avec les fessiers, pas en creusant le dos.",
+          "video_url": "",
+          "load_mode": "single",
+          "start_load_ratio": 1.0
+        },
+        {
+          "id": "hinge_3",
+          "level": 3,
+          "name": "Hip thrust une jambe",
+          "groups": ["glutes_hams"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["H"],
+          "cues": ["Une jambe tendue en l'air", "Bassin bien horizontal", "Pause 1 s en haut"],
+          "back_note": "Monte avec les fessiers, pas en creusant le dos.",
+          "video_url": "",
+          "load_mode": "single",
+          "unilateral": true,
+          "start_load_ratio": 1.0
+        },
+        {
+          "id": "hinge_4",
+          "level": 4,
+          "name": "Soulevé de terre roumain, descente en 3 s",
+          "groups": ["glutes_hams"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["H"],
+          "cues": ["Genoux légèrement fléchis", "Recule les hanches, haltères le long des cuisses", "Descente en 3 s jusqu'à la tension des ischios"],
+          "back_note": "Dos neutre absolu. Arrête si tu sens le bas du dos travailler.",
+          "video_url": "",
+          "load_mode": "pair",
+          "rep_s": 5,
+          "start_load_ratio": 1.0,
+          "back_lock": true
+        },
+        {
+          "id": "hinge_5",
+          "level": 5,
+          "name": "Soulevé de terre roumain une jambe",
+          "groups": ["glutes_hams"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["H"],
+          "cues": ["Un haltère côté jambe d'appui ou opposé", "Bassin face au sol", "Jambe arrière tendue dans l'alignement du dos"],
+          "back_note": "Dos neutre absolu. Arrête si tu sens le bas du dos travailler.",
+          "video_url": "",
+          "load_mode": "single",
+          "unilateral": true,
+          "rep_s": 4,
+          "start_load_ratio": 1.0,
+          "back_lock": true
+        },
+        {
+          "id": "hinge_6",
+          "level": 6,
+          "name": "Soulevé de terre roumain lourd",
+          "groups": ["glutes_hams"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["HL"],
+          "cues": ["Haltères lourds le long des cuisses", "Hanches en arrière", "Remonte en serrant les fessiers"],
+          "back_note": "Dos neutre absolu. Arrête si tu sens le bas du dos travailler.",
+          "video_url": "",
+          "load_mode": "pair",
+          "rep_s": 4,
+          "start_load_ratio": 0.7,
+          "back_lock": true
+        }
+      ]
+    },
+    {
+      "id": "core_ant",
+      "name": "Gainage antérieur",
+      "category": "core",
+      "pattern": "core",
+      "variants": [
+        {
+          "id": "core_ant_1",
+          "level": 1,
+          "name": "Curl-up McGill",
+          "groups": ["core"],
+          "type": "reps",
+          "range": [6, 10],
+          "equipment": [],
+          "cues": ["Une jambe pliée, mains sous le bas du dos", "Décolle tête et épaules de 2 cm", "Tiens 8 s par répétition"],
+          "back_note": "Le bas du dos ne bouge pas : seule la tête et les épaules montent.",
+          "video_url": "",
+          "load_mode": "none",
+          "rep_s": 10
+        },
+        {
+          "id": "core_ant_2",
+          "level": 2,
+          "name": "Dead bug",
+          "groups": ["core"],
+          "type": "reps",
+          "range": [8, 16],
+          "equipment": [],
+          "cues": ["Bas du dos plaqué au sol", "Bras et jambe opposés s'allongent", "Expire en allongeant"],
+          "back_note": "Si le dos décolle, réduis l'amplitude.",
+          "video_url": "",
+          "load_mode": "none"
+        },
+        {
+          "id": "core_ant_3",
+          "level": 3,
+          "name": "Dead bug, haltère tenu bras tendus",
+          "groups": ["core"],
+          "type": "reps",
+          "range": [8, 16],
+          "equipment": ["H"],
+          "cues": ["Haltère tenu à deux mains au-dessus de la poitrine", "Seules les jambes bougent", "Dos plaqué"],
+          "back_note": "Si le dos décolle, réduis l'amplitude.",
+          "video_url": "",
+          "load_mode": "single",
+          "start_load_ratio": 0.5
+        },
+        {
+          "id": "core_ant_4",
+          "level": 4,
+          "name": "Planche",
+          "groups": ["core"],
+          "type": "time",
+          "range": [20, 60],
+          "equipment": [],
+          "cues": ["Avant-bras sous les épaules", "Fesses serrées, bassin légèrement rentré", "Respire calmement"],
+          "back_note": "Arrête dès que le bas du dos creuse.",
+          "video_url": "",
+          "load_mode": "none"
+        },
+        {
+          "id": "core_ant_5",
+          "level": 5,
+          "name": "Planche bras avancés",
+          "groups": ["core"],
+          "type": "time",
+          "range": [20, 45],
+          "equipment": [],
+          "cues": ["Coudes 10 cm devant les épaules", "Bassin rentré", "Corps rigide"],
+          "back_note": "Arrête dès que le bas du dos creuse.",
+          "video_url": "",
+          "load_mode": "none"
+        },
+        {
+          "id": "core_ant_6",
+          "level": 6,
+          "name": "Planche lestée",
+          "groups": ["core"],
+          "type": "time",
+          "range": [30, 60],
+          "equipment": ["GL"],
+          "cues": ["Gilet bien ajusté", "Bassin rentré", "Corps rigide"],
+          "back_note": "Arrête dès que le bas du dos creuse.",
+          "video_url": "",
+          "load_mode": "none"
+        }
+      ]
+    },
+    {
+      "id": "core_lat",
+      "name": "Gainage latéral",
+      "category": "core",
+      "pattern": "core",
+      "variants": [
+        {
+          "id": "core_lat_1",
+          "level": 1,
+          "name": "Planche latérale sur les genoux",
+          "groups": ["core"],
+          "type": "time",
+          "range": [15, 45],
+          "equipment": [],
+          "cues": ["Coude sous l'épaule", "Genoux, hanches et épaules alignés", "Hanche haute"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none",
+          "unilateral": true
+        },
+        {
+          "id": "core_lat_2",
+          "level": 2,
+          "name": "Planche latérale sur les pieds",
+          "groups": ["core"],
+          "type": "time",
+          "range": [15, 60],
+          "equipment": [],
+          "cues": ["Pieds l'un sur l'autre ou décalés", "Hanche haute", "Corps en ligne droite"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none",
+          "unilateral": true
+        },
+        {
+          "id": "core_lat_3",
+          "level": 3,
+          "name": "Planche latérale, jambe levée",
+          "groups": ["core"],
+          "type": "time",
+          "range": [15, 45],
+          "equipment": [],
+          "cues": ["Lève la jambe du dessus", "Hanche haute", "Ne tourne pas le buste"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none",
+          "unilateral": true
+        },
+        {
+          "id": "core_lat_4",
+          "level": 4,
+          "name": "Copenhague, genou sur chaise",
+          "groups": ["core"],
+          "type": "time",
+          "range": [10, 30],
+          "equipment": [],
+          "cues": ["Genou du dessus posé sur la chaise", "Jambe du dessous libre", "Hanche haute"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none",
+          "unilateral": true
+        },
+        {
+          "id": "core_lat_5",
+          "level": 5,
+          "name": "Copenhague, jambe tendue",
+          "groups": ["core"],
+          "type": "time",
+          "range": [10, 30],
+          "equipment": [],
+          "cues": ["Cheville sur la chaise", "Corps aligné", "Hanche haute"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none",
+          "unilateral": true
+        }
+      ]
+    },
+    {
+      "id": "anti_rot",
+      "name": "Anti-rotation",
+      "category": "core",
+      "pattern": "core",
+      "variants": [
+        {
+          "id": "anti_rot_1",
+          "level": 1,
+          "name": "Bird-dog",
+          "groups": ["core"],
+          "type": "reps",
+          "range": [6, 12],
+          "equipment": [],
+          "cues": ["À quatre pattes, dos plat", "Bras et jambe opposés s'allongent", "Ne bascule pas le bassin"],
+          "back_note": "Imagine un verre d'eau posé sur ton dos.",
+          "video_url": "",
+          "load_mode": "none",
+          "unilateral": true,
+          "rep_s": 4
+        },
+        {
+          "id": "anti_rot_2",
+          "level": 2,
+          "name": "Bird-dog, pause 10 s",
+          "groups": ["core"],
+          "type": "reps",
+          "range": [4, 8],
+          "equipment": [],
+          "cues": ["Tiens 10 s en extension", "Pousse loin avec le talon et la main", "Respire"],
+          "back_note": "Imagine un verre d'eau posé sur ton dos.",
+          "video_url": "",
+          "load_mode": "none",
+          "unilateral": true,
+          "rep_s": 12
+        },
+        {
+          "id": "anti_rot_3",
+          "level": 3,
+          "name": "Planche avec touches d'épaule",
+          "groups": ["core"],
+          "type": "reps",
+          "range": [10, 20],
+          "equipment": [],
+          "cues": ["En haut de pompe, pieds écartés", "Touche l'épaule opposée", "Bassin immobile"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none"
+        },
+        {
+          "id": "anti_rot_4",
+          "level": 4,
+          "name": "Renegade row lent",
+          "groups": ["core", "back"],
+          "type": "reps",
+          "range": [6, 12],
+          "equipment": ["H"],
+          "cues": ["En haut de pompe sur les haltères", "Tire un haltère sans tourner le bassin", "Pieds écartés"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "pair",
+          "start_load_ratio": 0.6
+        },
+        {
+          "id": "anti_rot_5",
+          "level": 5,
+          "name": "Pallof press",
+          "groups": ["core"],
+          "type": "reps",
+          "range": [10, 15],
+          "equipment": ["EL"],
+          "cues": ["Élastique fixé sur le côté", "Pousse les mains devant la poitrine", "Résiste à la rotation"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none",
+          "unilateral": true
+        }
+      ]
+    },
+    {
+      "id": "carry",
+      "name": "Porter",
+      "category": "core",
+      "pattern": "carry",
+      "variants": [
+        {
+          "id": "carry_1",
+          "level": 1,
+          "name": "Marche du fermier 30 s",
+          "groups": ["core"],
+          "type": "time",
+          "range": [30, 30],
+          "equipment": ["H"],
+          "cues": ["Un haltère dans chaque main", "Épaules basses, buste droit", "Petits pas réguliers"],
+          "back_note": "Reste grand : ne te penche pas.",
+          "video_url": "",
+          "load_mode": "pair",
+          "start_load_ratio": 1.0
+        },
+        {
+          "id": "carry_2",
+          "level": 2,
+          "name": "Marche du fermier 45 s",
+          "groups": ["core"],
+          "type": "time",
+          "range": [45, 45],
+          "equipment": ["H"],
+          "cues": ["Épaules basses", "Buste droit", "Respire"],
+          "back_note": "Reste grand : ne te penche pas.",
+          "video_url": "",
+          "load_mode": "pair",
+          "start_load_ratio": 1.0
+        },
+        {
+          "id": "carry_3",
+          "level": 3,
+          "name": "Marche du fermier 60 s",
+          "groups": ["core"],
+          "type": "time",
+          "range": [60, 60],
+          "equipment": ["H"],
+          "cues": ["Épaules basses", "Buste droit", "Serre les poignées"],
+          "back_note": "Reste grand : ne te penche pas.",
+          "video_url": "",
+          "load_mode": "pair",
+          "start_load_ratio": 1.0
+        },
+        {
+          "id": "carry_4",
+          "level": 4,
+          "name": "Marche valise (un haltère)",
+          "groups": ["core"],
+          "type": "time",
+          "range": [30, 60],
+          "equipment": ["H"],
+          "cues": ["Un seul haltère", "Ne penche pas du côté de la charge", "Change de main à mi-temps"],
+          "back_note": "Reste grand : ne te penche pas.",
+          "video_url": "",
+          "load_mode": "single",
+          "start_load_ratio": 1.0
+        },
+        {
+          "id": "carry_5",
+          "level": 5,
+          "name": "Marche un bras au-dessus de la tête",
+          "groups": ["core", "shoulders"],
+          "type": "time",
+          "range": [20, 45],
+          "equipment": ["H"],
+          "cues": ["Bras tendu, biceps près de l'oreille", "Côtes basses", "Change de bras à mi-temps"],
+          "back_note": "Côtes basses : ne cambre pas.",
+          "video_url": "",
+          "load_mode": "single",
+          "start_load_ratio": 0.6
+        },
+        {
+          "id": "carry_6",
+          "level": 6,
+          "name": "Marche du fermier lourde",
+          "groups": ["core"],
+          "type": "time",
+          "range": [30, 60],
+          "equipment": ["HL"],
+          "cues": ["Haltères lourds", "Épaules basses", "Petits pas"],
+          "back_note": "Reste grand : ne te penche pas.",
+          "video_url": "",
+          "load_mode": "pair",
+          "start_load_ratio": 1.0
+        }
+      ]
+    },
+    {
+      "id": "hang",
+      "name": "Suspension",
+      "category": "core",
+      "pattern": "hang",
+      "variants": [
+        {
+          "id": "hang_1",
+          "level": 1,
+          "name": "Suspension, pieds au sol",
+          "groups": ["back"],
+          "type": "time",
+          "range": [20, 40],
+          "equipment": ["P"],
+          "cues": ["Grandes prises uniquement", "Pieds au sol, délesté", "Épaules loin des oreilles"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none"
+        },
+        {
+          "id": "hang_2",
+          "level": 2,
+          "name": "Suspension, poids complet 10 s",
+          "groups": [],
+          "type": "time",
+          "range": [10, 10],
+          "equipment": ["P"],
+          "cues": ["Grandes prises uniquement", "Pouce à côté des doigts", "Descends doucement"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none"
+        },
+        {
+          "id": "hang_3",
+          "level": 3,
+          "name": "Suspension, poids complet 20 s",
+          "groups": [],
+          "type": "time",
+          "range": [20, 20],
+          "equipment": ["P"],
+          "cues": ["Grandes prises uniquement", "Corps détendu", "Respire"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none"
+        },
+        {
+          "id": "hang_4",
+          "level": 4,
+          "name": "Suspension, poids complet 30 s",
+          "groups": [],
+          "type": "time",
+          "range": [30, 30],
+          "equipment": ["P"],
+          "cues": ["Grandes prises uniquement", "Corps détendu", "Respire"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none"
+        },
+        {
+          "id": "hang_5",
+          "level": 5,
+          "name": "Suspension active 30 s",
+          "groups": ["back"],
+          "type": "time",
+          "range": [30, 30],
+          "equipment": ["P"],
+          "cues": ["Grandes prises uniquement", "Omoplates engagées, épaules basses", "Coudes tendus"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none"
+        },
+        {
+          "id": "hang_6",
+          "level": 6,
+          "name": "Suspension active 45 s",
+          "groups": ["back"],
+          "type": "time",
+          "range": [45, 45],
+          "equipment": ["P"],
+          "cues": ["Grandes prises uniquement (prises moyennes ≥ 20 mm dès le rang C)", "Omoplates engagées", "Coudes tendus"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none"
+        }
+      ]
+    },
+    {
+      "id": "curl",
+      "name": "Curl biceps",
+      "category": "accessory",
+      "pattern": "arms",
+      "variants": [
+        {
+          "id": "curl_1",
+          "level": 1,
+          "name": "Curl",
+          "groups": ["arms"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["H"],
+          "cues": ["Coudes collés au corps", "Monte sans élan", "Descente en 2 s"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "pair",
+          "start_load_ratio": 0.7
+        },
+        {
+          "id": "curl_2",
+          "level": 2,
+          "name": "Curl marteau",
+          "groups": ["arms"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["H"],
+          "cues": ["Pouces vers le haut", "Coudes fixes", "Descente contrôlée"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "pair",
+          "start_load_ratio": 0.8
+        },
+        {
+          "id": "curl_3",
+          "level": 3,
+          "name": "Curl tempo",
+          "groups": ["arms"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["H"],
+          "cues": ["Montée 1 s, descente 3 s", "Coudes fixes", "Pas d'élan"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "pair",
+          "rep_s": 5,
+          "start_load_ratio": 0.7
+        },
+        {
+          "id": "curl_4",
+          "level": 4,
+          "name": "Curl incliné",
+          "groups": ["arms"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["BC", "H"],
+          "cues": ["Banc incliné à 45°", "Bras pendants derrière le buste", "Monte sans avancer les coudes"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "pair",
+          "start_load_ratio": 0.6
+        }
+      ]
+    },
+    {
+      "id": "triceps",
+      "name": "Triceps",
+      "category": "accessory",
+      "pattern": "arms",
+      "variants": [
+        {
+          "id": "triceps_1",
+          "level": 1,
+          "name": "Extension triceps au-dessus de la tête",
+          "groups": ["arms"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["H"],
+          "cues": ["Un haltère tenu à deux mains", "Coudes vers le plafond", "Descends derrière la tête"],
+          "back_note": "Côtes basses : ne cambre pas.",
+          "video_url": "",
+          "load_mode": "single",
+          "start_load_ratio": 0.8
+        },
+        {
+          "id": "triceps_2",
+          "level": 2,
+          "name": "Extension triceps allongé au sol",
+          "groups": ["arms"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["H"],
+          "cues": ["Allongé, haltères au-dessus du front", "Seuls les avant-bras bougent", "Coudes fixes"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "pair",
+          "start_load_ratio": 0.6
+        },
+        {
+          "id": "triceps_3",
+          "level": 3,
+          "name": "Pompes diamant",
+          "groups": ["arms"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": [],
+          "cues": ["Mains rapprochées sous la poitrine", "Coudes le long du corps", "Corps gainé"],
+          "back_note": "Fesses serrées : le bas du dos ne doit pas creuser.",
+          "video_url": "",
+          "load_mode": "none"
+        }
+      ]
+    },
+    {
+      "id": "lateral",
+      "name": "Épaules",
+      "category": "accessory",
+      "pattern": "arms",
+      "variants": [
+        {
+          "id": "lateral_1",
+          "level": 1,
+          "name": "Élévations latérales",
+          "groups": ["shoulders"],
+          "type": "reps",
+          "range": [10, 20],
+          "equipment": ["H"],
+          "cues": ["Bras légèrement fléchis", "Monte jusqu'à l'horizontale", "Descente en 2 s"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "pair",
+          "start_load_ratio": 0.4
+        },
+        {
+          "id": "lateral_2",
+          "level": 2,
+          "name": "Élévations latérales tempo",
+          "groups": ["shoulders"],
+          "type": "reps",
+          "range": [8, 15],
+          "equipment": ["H"],
+          "cues": ["Montée 2 s, descente 3 s", "Épaules basses", "Pas d'élan"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "pair",
+          "rep_s": 5,
+          "start_load_ratio": 0.4
+        },
+        {
+          "id": "lateral_3",
+          "level": 3,
+          "name": "Oiseau (deltoïde arrière)",
+          "groups": ["shoulders"],
+          "type": "reps",
+          "range": [10, 20],
+          "equipment": ["H"],
+          "cues": ["Buste penché, dos neutre", "Ouvre les bras sur les côtés", "Serre les omoplates"],
+          "back_note": "Dos neutre : côtes basses, bassin ni creusé ni enroulé.",
+          "video_url": "",
+          "load_mode": "pair",
+          "start_load_ratio": 0.4
+        }
+      ]
+    },
+    {
+      "id": "calves",
+      "name": "Mollets",
+      "category": "accessory",
+      "pattern": "legs",
+      "variants": [
+        {
+          "id": "calves_1",
+          "level": 1,
+          "name": "Mollets debout sur une jambe",
+          "groups": [],
+          "type": "reps",
+          "range": [10, 20],
+          "equipment": ["H"],
+          "cues": ["Avant du pied sur une marche", "Monte au maximum, pause 1 s", "Descends talon sous la marche"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "single",
+          "unilateral": true,
+          "start_load_ratio": 1.0
+        }
+      ]
+    },
+    {
+      "id": "iso_pushup",
+      "name": "Tenue pompe",
+      "category": "iso",
+      "pattern": "push",
+      "variants": [
+        {
+          "id": "iso_pushup_1",
+          "level": 1,
+          "name": "Tenue pompe bras fléchis",
+          "groups": ["chest"],
+          "type": "time",
+          "range": [20, 40],
+          "equipment": [],
+          "cues": ["Bras fléchis à 90°", "Corps gainé", "Respire"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none"
+        }
+      ]
+    },
+    {
+      "id": "iso_curl",
+      "name": "Tenue curl",
+      "category": "iso",
+      "pattern": "arms",
+      "variants": [
+        {
+          "id": "iso_curl_1",
+          "level": 1,
+          "name": "Tenue curl à 90°",
+          "groups": ["arms"],
+          "type": "time",
+          "range": [20, 40],
+          "equipment": ["H"],
+          "cues": ["Coudes à 90°", "Coudes collés au corps", "Poignets droits"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "pair",
+          "start_load_ratio": 0.6
+        }
+      ]
+    },
+    {
+      "id": "iso_lateral",
+      "name": "Tenue élévation latérale",
+      "category": "iso",
+      "pattern": "arms",
+      "variants": [
+        {
+          "id": "iso_lateral_1",
+          "level": 1,
+          "name": "Tenue élévation latérale",
+          "groups": ["shoulders"],
+          "type": "time",
+          "range": [15, 30],
+          "equipment": ["H"],
+          "cues": ["Bras à l'horizontale", "Épaules basses", "Pouces légèrement vers le haut"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "pair",
+          "start_load_ratio": 0.3
+        }
+      ]
+    },
+    {
+      "id": "iso_wallsit",
+      "name": "Chaise",
+      "category": "iso",
+      "pattern": "squat",
+      "variants": [
+        {
+          "id": "iso_wallsit_1",
+          "level": 1,
+          "name": "Chaise contre le mur",
+          "groups": ["quads"],
+          "type": "time",
+          "range": [30, 60],
+          "equipment": [],
+          "cues": ["Dos plaqué au mur", "Cuisses à l'horizontale", "Genoux au-dessus des chevilles"],
+          "back_note": "Bas du dos collé au mur.",
+          "video_url": "",
+          "load_mode": "none"
+        }
+      ]
+    },
+    {
+      "id": "iso_bridge",
+      "name": "Pont tenu",
+      "category": "iso",
+      "pattern": "hinge",
+      "variants": [
+        {
+          "id": "iso_bridge_1",
+          "level": 1,
+          "name": "Pont fessier tenu",
+          "groups": ["glutes_hams"],
+          "type": "time",
+          "range": [30, 60],
+          "equipment": ["H"],
+          "cues": ["Hanches hautes", "Fessiers serrés", "Talons ancrés"],
+          "back_note": "Monte avec les fessiers, pas en creusant le dos.",
+          "video_url": "",
+          "load_mode": "single",
+          "start_load_ratio": 1.0
+        }
+      ]
+    },
+    {
+      "id": "mob_hips",
+      "name": "Mobilité des hanches",
+      "category": "mobility",
+      "pattern": "mobility",
+      "zone": true,
+      "variants": [
+        {
+          "id": "mob_hips_1",
+          "level": 1,
+          "name": "Fente basse",
+          "groups": [],
+          "type": "time",
+          "range": [45, 45],
+          "equipment": [],
+          "cues": ["Genou arrière au sol", "Avance le bassin", "Serre le fessier arrière"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none",
+          "unilateral": true
+        },
+        {
+          "id": "mob_hips_2",
+          "level": 2,
+          "name": "90/90",
+          "groups": [],
+          "type": "time",
+          "range": [45, 45],
+          "equipment": [],
+          "cues": ["Les deux genoux à 90°", "Buste grand au-dessus de la jambe avant", "Change de côté à mi-temps"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none"
+        },
+        {
+          "id": "mob_hips_3",
+          "level": 3,
+          "name": "Accroupi profond",
+          "groups": [],
+          "type": "time",
+          "range": [30, 120],
+          "equipment": [],
+          "cues": ["Talons au sol", "Coudes poussent les genoux", "Respire lentement"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none"
+        },
+        {
+          "id": "mob_hips_4",
+          "level": 4,
+          "name": "Accroupi profond avec haltère",
+          "groups": [],
+          "type": "time",
+          "range": [30, 120],
+          "equipment": ["H"],
+          "cues": ["Haltère tenu contre la poitrine en contrepoids", "Talons au sol", "Buste grand"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "single",
+          "start_load_ratio": 0.5
+        },
+        {
+          "id": "mob_hips_5",
+          "level": 5,
+          "name": "Squat cosaque",
+          "groups": [],
+          "type": "reps",
+          "range": [5, 10],
+          "equipment": [],
+          "cues": ["Pieds très écartés", "Descends sur une jambe, l'autre tendue", "Talon au sol"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none",
+          "unilateral": true,
+          "rep_s": 4
+        }
+      ]
+    },
+    {
+      "id": "mob_thoracic",
+      "name": "Mobilité thoracique",
+      "category": "mobility",
+      "pattern": "mobility",
+      "zone": true,
+      "variants": [
+        {
+          "id": "mob_thoracic_1",
+          "level": 1,
+          "name": "Chat-vache",
+          "groups": [],
+          "type": "time",
+          "range": [45, 60],
+          "equipment": [],
+          "cues": ["À quatre pattes", "Enroule puis ouvre le dos lentement", "Suis ta respiration"],
+          "back_note": "Mouvement doux, sans forcer en bas du dos.",
+          "video_url": "",
+          "load_mode": "none"
+        },
+        {
+          "id": "mob_thoracic_2",
+          "level": 2,
+          "name": "Rotation thoracique à quatre pattes",
+          "groups": [],
+          "type": "time",
+          "range": [45, 45],
+          "equipment": [],
+          "cues": ["Main derrière la tête", "Ouvre le coude vers le plafond", "Le bassin ne bouge pas"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none",
+          "unilateral": true
+        }
+      ]
+    },
+    {
+      "id": "mob_shoulders",
+      "name": "Mobilité des épaules",
+      "category": "mobility",
+      "pattern": "mobility",
+      "zone": true,
+      "variants": [
+        {
+          "id": "mob_shoulders_1",
+          "level": 1,
+          "name": "Glissés au mur",
+          "groups": [],
+          "type": "time",
+          "range": [45, 60],
+          "equipment": [],
+          "cues": ["Dos et avant-bras contre le mur", "Glisse les bras vers le haut", "Côtes basses"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none"
+        },
+        {
+          "id": "mob_shoulders_2",
+          "level": 2,
+          "name": "Suspension passive",
+          "groups": [],
+          "type": "time",
+          "range": [20, 30],
+          "equipment": ["P"],
+          "cues": ["Grandes prises uniquement", "Pieds au sol si besoin", "Laisse les épaules s'étirer"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none"
+        },
+        {
+          "id": "mob_shoulders_3",
+          "level": 3,
+          "name": "Passages d'épaules à l'élastique",
+          "groups": [],
+          "type": "reps",
+          "range": [10, 15],
+          "equipment": ["EL"],
+          "cues": ["Bras tendus, prise large", "Passe l'élastique derrière toi", "Côtes basses"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none"
+        }
+      ]
+    },
+    {
+      "id": "mob_ankles",
+      "name": "Mobilité des chevilles",
+      "category": "mobility",
+      "pattern": "mobility",
+      "zone": true,
+      "variants": [
+        {
+          "id": "mob_ankles_1",
+          "level": 1,
+          "name": "Genou au mur",
+          "groups": [],
+          "type": "time",
+          "range": [45, 60],
+          "equipment": [],
+          "cues": ["Pied à quelques cm du mur", "Avance le genou vers le mur, talon au sol", "Alterne les côtés"],
+          "back_note": "",
+          "video_url": "",
+          "load_mode": "none",
+          "unilateral": true
+        }
+      ]
+    },
+    {
+      "id": "mob_hams",
+      "name": "Mobilité des ischios",
+      "category": "mobility",
+      "pattern": "mobility",
+      "zone": true,
+      "variants": [
+        {
+          "id": "mob_hams_1",
+          "level": 1,
+          "name": "Étirement jambe sur une chaise",
+          "groups": [],
+          "type": "time",
+          "range": [45, 60],
+          "equipment": [],
+          "cues": ["Talon sur la chaise, jambe tendue", "Penche-toi depuis les hanches", "Dos long"],
+          "back_note": "Penche depuis les hanches, pas en arrondissant le dos.",
+          "video_url": "",
+          "load_mode": "none",
+          "unilateral": true
+        }
+      ]
+    }
+  ],
+  "warmups": {
+    "HAUT": [
+      {
+        "name": "Cercles de bras",
+        "seconds": 30
+      },
+      {
+        "name": "Pompes scapulaires",
+        "seconds": 30
+      },
+      {
+        "name": "Rotations thoraciques debout",
+        "seconds": 30
+      },
+      {
+        "name": "Rowing à vide, lent",
+        "seconds": 30
+      },
+      {
+        "name": "Série d'approche du 1er exercice, facile",
+        "seconds": 60
+      }
+    ],
+    "BAS": [
+      {
+        "name": "Chat-vache",
+        "seconds": 30
+      },
+      {
+        "name": "Pont fessier au poids du corps",
+        "seconds": 30
+      },
+      {
+        "name": "Squat au poids du corps, lent",
+        "seconds": 45
+      },
+      {
+        "name": "Fente arrière alternée",
+        "seconds": 45
+      },
+      {
+        "name": "Cercles de hanches",
+        "seconds": 30
+      }
+    ],
+    "RECAL": [
+      {
+        "name": "Chat-vache",
+        "seconds": 45
+      },
+      {
+        "name": "Cercles d'épaules",
+        "seconds": 30
+      },
+      {
+        "name": "Bird-dog lent",
+        "seconds": 45
+      },
+      {
+        "name": "Respiration diaphragmatique",
+        "seconds": 60
+      }
+    ]
+  },
+  "cooldown": [
+    {
+      "name": "Respiration 4-6 (inspire 4 s, expire 6 s), allongé",
+      "seconds": 60
+    },
+    {
+      "name": "Respiration crocodile, sur le ventre",
+      "seconds": 60
+    }
+  ],
+  "recovery": [
+    {
+      "name": "Respiration crocodile, sur le ventre",
+      "seconds": 90
+    },
+    {
+      "name": "Chat-vache, très doux",
+      "seconds": 90
+    },
+    {
+      "name": "Bird-dog lent, petite amplitude",
+      "seconds": 90
+    },
+    {
+      "name": "90/90 des hanches",
+      "seconds": 90
+    },
+    {
+      "name": "Genou au mur",
+      "seconds": 60
+    },
+    {
+      "name": "Étirement doux jambe sur une chaise",
+      "seconds": 60
+    },
+    {
+      "name": "Respiration 4-6, allongé genoux pliés",
+      "seconds": 120
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "_doc": "Titles unlocked by real facts. 'when' uses the same condition format as ranks.json (all conditions must pass).",
+  "titles": [
+    {"id": "awakened", "name": "Éveillé", "desc": "Terminer l'Éveil.", "when": [{"metric": "awakened", "min": 1}]},
+    {"id": "returner", "name": "Celui qui revient", "desc": "Réussir une quête de rachat.", "when": [{"metric": "redemptions_done", "min": 1}]},
+    {"id": "unstoppable", "name": "Inarrêtable", "desc": "28 jours sans pénalité.", "when": [{"metric": "days_without_penalty", "min": 28}]},
+    {"id": "first_pullup", "name": "Première traction", "desc": "Réussir une traction stricte.", "when": [{"metric": "pullups", "min": 1}]},
+    {"id": "iron_grip", "name": "Poigne d'acier", "desc": "Suspension de 60 s.", "when": [{"metric": "hang_s", "min": 60}]},
+    {"id": "soft_cable", "name": "Câble souple", "desc": "Toucher le sol jambes tendues.", "when": [{"metric": "toe_touch_cm", "max": 0}]},
+    {"id": "first_patch", "name": "Mise à jour installée", "desc": "Terminer un premier patch.", "when": [{"metric": "patches_done", "min": 1}]},
+    {"id": "v2", "name": "Version majeure", "desc": "Atteindre la v2.0.", "when": [{"metric": "version_major", "min": 2}]},
+    {"id": "streak7", "name": "Boucle stable", "desc": "7 quêtes principales réussies d'affilée.", "when": [{"metric": "streak", "min": 7}]},
+    {"id": "streak21", "name": "Processus permanent", "desc": "21 quêtes principales réussies d'affilée.", "when": [{"metric": "streak", "min": 21}]},
+    {"id": "quests50", "name": "Exécutable fiable", "desc": "50 quêtes principales terminées.", "when": [{"metric": "main_quests_done", "min": 50}]},
+    {"id": "quests100", "name": "Centurion du code", "desc": "100 quêtes principales terminées.", "when": [{"metric": "main_quests_done", "min": 100}]},
+    {"id": "dungeon1", "name": "Explorateur de donjon", "desc": "Terminer un premier Donjon.", "when": [{"metric": "dungeons_done", "min": 1}]},
+    {"id": "boss5", "name": "Chasseur de boss", "desc": "Vaincre 5 boss.", "when": [{"metric": "bosses_defeated", "min": 5}]},
+    {"id": "plank120", "name": "Colonne de granit", "desc": "Planche de 2 min.", "when": [{"metric": "plank_s", "min": 120}]},
+    {"id": "push30", "name": "Piston", "desc": "30 pompes strictes d'affilée.", "when": [{"metric": "pushups", "min": 30}]},
+    {"id": "push50", "name": "Moteur hydraulique", "desc": "50 pompes strictes d'affilée.", "when": [{"metric": "pushups", "min": 50}]},
+    {"id": "deep_squat", "name": "Assise ancestrale", "desc": "Accroupi profond talons au sol 2 min.", "when": [{"metric": "deep_squat_s", "min": 120}]},
+    {"id": "arm_gain2", "name": "Recompilé", "desc": "+2 cm de tour de bras depuis l'Éveil.", "when": [{"metric": "arm_gain_cm", "min": 2}]},
+    {"id": "upgrade1", "name": "Matériel augmenté", "desc": "Acquérir une première mise à niveau matérielle.", "when": [{"metric": "upgrades_acquired", "min": 1}]},
+    {"id": "endurance10", "name": "Cœur endurant", "desc": "10 semaines avec la quête d'endurance faite.", "when": [{"metric": "endurance_weeks", "min": 10}]},
+    {"id": "protein", "name": "Bâtisseur", "desc": "Objectif de protéines atteint 6 jours sur 7, 4 semaines.", "when": [{"metric": "protein_weeks", "min": 4}]},
+    {"id": "back_safe", "name": "Dos blindé", "desc": "Débloquer le soulevé de terre roumain.", "when": [{"metric": "loaded_hinge_unlocked", "min": 1}]},
+    {"id": "urgent10", "name": "Réflexe système", "desc": "Réussir 10 quêtes urgentes.", "when": [{"metric": "urgent_done", "min": 10}]},
+    {"id": "rank_c", "name": "Signal clair", "desc": "Atteindre le rang C.", "when": [{"metric": "rank_index", "min": 2}]},
+    {"id": "rank_a", "name": "Anomalie", "desc": "Atteindre le rang A.", "when": [{"metric": "rank_index", "min": 4}]}
+  ]
+}
