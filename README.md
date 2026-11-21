@@ -74,7 +74,7 @@ Contrôle avec `tailscale serve status`. L'adresse ressemble à :
 https://lgabeelink.<ton-tailnet>.ts.net/
 ```
 
-Utilise **cette URL partout**, à la maison comme dehors : ton téléphone est dans le tailnet. Pour tout arrêter : `sudo tailscale serve reset`.
+Utilise **cette URL partout**, à la maison comme dehors : ton téléphone est dans le tailnet. Pour arrêter : `sudo tailscale serve --https=443 off` (la commande exacte est rappelée par `tailscale serve` au démarrage).
 
 L'accès LAN `http://192.168.0.23:8087` reste possible, mais sans HTTPS : pas de maintien de l'écran allumé ni de PWA.
 
