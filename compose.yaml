@@ -1,7 +1,8 @@
+# Stack OVERRIDE pour Dockge : à coller tel quel dans une nouvelle stack.
+# Mise à jour : bouton « Mettre à jour » dans Dockge (télécharge la dernière image).
 services:
   override:
-    build: .
-    image: override:latest
+    image: ghcr.io/renaar/override:${OVERRIDE_TAG:-latest}
     container_name: override
     restart: unless-stopped
     ports:

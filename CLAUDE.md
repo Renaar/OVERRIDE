@@ -4,7 +4,8 @@ Personal LitRPG training app, single user, French UI. Spec phases: 1 core, 2 ful
 
 ## Stack
 - Backend: Python 3.12, FastAPI, SQLite (stdlib `sqlite3`), no ORM. Front: vanilla ES modules, no build, no CDN.
-- One container (`Dockerfile`, `compose.yaml`, port 8087, volume `./data`, TZ Europe/Zurich).
+- One container (`Dockerfile`, port 8087, volume `./data`, TZ Europe/Zurich). CI (`.github/workflows/docker.yml`)
+  publishes `ghcr.io/renaar/override` (main → `latest`); `compose.yaml` pulls it (Dockge, no source on the server).
 
 ## Layout
 - `app/engine/` — pure game logic (no I/O, no clock). All rules live here and are unit-tested.

@@ -16,10 +16,11 @@ COPY app ./app
 COPY web ./web
 # Program JSON files: copied into the data volume on first start, never overwritten afterwards.
 COPY data/*.json ./defaults/
+COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN mkdir -p /app/data && chown -R override:override /app/data
 
-USER override
 EXPOSE 8087
 HEALTHCHECK --interval=60s --timeout=5s --start-period=20s --retries=3 \
   CMD python -c "import urllib.request,os;urllib.request.urlopen(f'http://127.0.0.1:{os.environ[\"PORT\"]}/healthz',timeout=4)"
+ENTRYPOINT ["entrypoint.sh"]
 CMD ["sh", "-c", "exec uvicorn app.main:app --host 0.0.0.0 --port ${PORT} --proxy-headers --no-server-header"]

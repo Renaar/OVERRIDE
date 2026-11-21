@@ -7,24 +7,35 @@ Application personnelle d'entraînement façon « Système » LitRPG. Un Systèm
 
 ## Installation dans Dockge
 
-Sur le serveur (`lgabeelink`) :
+L'image est construite par GitHub à chaque mise à jour du code et publiée sur `ghcr.io/renaar/override`. Aucun code n'est nécessaire sur le serveur.
+
+### Une seule fois : autoriser le serveur à télécharger l'image
+
+Le dépôt est privé, donc l'image l'est aussi.
+
+1. Sur GitHub : **Settings → Developer settings → Personal access tokens → Tokens (classic) → Generate new token**, avec la seule case **`read:packages`**.
+2. Sur le serveur :
 
 ```bash
-cd /opt/stacks
-sudo git clone https://github.com/renaar/override.git override
-cd override
-sudo chown -R 1000:1000 data      # le conteneur tourne avec l'utilisateur 1000
+sudo docker login ghcr.io -u renaar
+# mot de passe : colle le token
 ```
 
-Le dépôt est privé : `git clone` te demandera ton identifiant GitHub et un *personal access token* (ou utilise `gh repo clone renaar/override override`).
+### Créer la stack
 
-Puis, dans Dockge :
+1. Dans Dockge : **+ Composer**, nom de la stack : `override`.
+2. Colle le contenu de [`compose.yaml`](compose.yaml).
+3. Clique sur **Déployer**.
+4. Vérifie : `http://192.168.0.23:8087/healthz` doit répondre `{"status":"ok",...}`.
 
-1. Rafraîchis la liste des stacks : **override** apparaît (Dockge lit `/opt/stacks/override/compose.yaml`).
-2. Clique sur **Démarrer**. La première fois, l'image est construite (1 à 2 min sur le N150).
-3. Vérifie : `http://192.168.0.23:8087/healthz` doit répondre `{"status":"ok",...}`.
+Le dossier `/opt/stacks/override/data` est créé automatiquement, avec les bons droits.
 
-Le port par défaut est **8087**. Pour en changer, crée un fichier `.env` à côté de `compose.yaml` avec `OVERRIDE_PORT=8088`.
+Réglages facultatifs, dans le `.env` de la stack (éditable dans Dockge) :
+
+| Variable | Défaut | Rôle |
+|---|---|---|
+| `OVERRIDE_PORT` | `8087` | port sur le serveur |
+| `OVERRIDE_TAG` | `latest` | version de l'image (`latest` = branche `main`) |
 
 ### Ce qu'il y a dans `./data`
 
@@ -36,17 +47,11 @@ Le port par défaut est **8087**. Pour en changer, crée un fichier `.env` à c�
 | `ranks.json`, `titles.json` | épreuves de rang et titres |
 | `system_messages.json` | la bibliothèque de messages du Système |
 
-Les fichiers JSON sont modifiables. Redémarre la stack après une modification.
+Ces fichiers sont copiés au premier démarrage, puis jamais écrasés : tu peux les modifier (redémarre la stack ensuite). Pour récupérer la version d'origine d'un fichier, supprime-le et redémarre.
 
 ## Mise à jour
 
-```bash
-cd /opt/stacks/override
-sudo git pull
-```
-
-Puis, dans Dockge : **Mettre à jour** (ou `docker compose up -d --build`).
-Si tu as modifié un JSON de `data/`, `git pull` te le signalera : garde ta version (`git stash`, puis `git stash pop`) ou accepte la nouvelle.
+Dans Dockge, ouvre la stack et clique sur **Mettre à jour** : la dernière image est téléchargée et le conteneur redémarre. Ta progression reste dans `./data`.
 
 ## HTTPS avec Tailscale (nécessaire pour l'écran toujours allumé et, plus tard, la PWA)
 
@@ -86,6 +91,7 @@ Ajoute une sonde **HTTP(s)** sur `http://192.168.0.23:8087/healthz`, avec un int
 ## Développement
 
 ```bash
+docker build -t ghcr.io/renaar/override:latest .   # image locale, sans passer par GitHub
 pip install -r requirements-dev.txt
 python -m pytest                      # tests du moteur et du service
 DATA_DIR=/tmp/override-data uvicorn app.main:app --reload --port 8087
