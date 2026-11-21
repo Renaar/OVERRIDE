@@ -60,21 +60,22 @@ Prérequis dans la console Tailscale (https://login.tailscale.com/admin/dns) :
 - **MagicDNS** activé ;
 - **HTTPS Certificates** activé.
 
-Sur le serveur, lance une seule fois :
+OVERRIDE utilise son **propre port HTTPS, 8443**, pour ne pas prendre l'adresse principale (`:443`), déjà utilisée par Actual Budget. Sur le serveur, lance une seule fois :
 
 ```bash
-sudo tailscale serve --bg 8087
+sudo tailscale serve --bg --https=8443 8087
 ```
 
-> Vérifie la syntaxe avec `tailscale serve --help` : elle a changé selon les versions. Avec les versions récentes, `--bg` laisse le service actif en arrière-plan et survit aux redémarrages.
+> ⚠ Ne lance pas `tailscale serve --bg 8087` sans `--https=8443` : cette forme remplace ce qui est servi sur l'adresse principale (ici Actual Budget).
+> Vérifie la syntaxe avec `tailscale serve --help` : elle a changé selon les versions. `--bg` laisse le service actif en arrière-plan et survit aux redémarrages.
 
-Contrôle avec `tailscale serve status`. L'adresse ressemble à :
+Contrôle avec `tailscale serve status`. L'adresse d'OVERRIDE est :
 
 ```
-https://lgabeelink.<ton-tailnet>.ts.net/
+https://lgabeelink.tailab1c70.ts.net:8443/
 ```
 
-Utilise **cette URL partout**, à la maison comme dehors : ton téléphone est dans le tailnet. Pour arrêter : `sudo tailscale serve --https=443 off` (la commande exacte est rappelée par `tailscale serve` au démarrage).
+Utilise **cette URL partout**, à la maison comme dehors : ton téléphone est dans le tailnet. Pour arrêter : `sudo tailscale serve --https=8443 off`.
 
 L'accès LAN `http://192.168.0.23:8087` reste possible, mais sans HTTPS : pas de maintien de l'écran allumé ni de PWA.
 
