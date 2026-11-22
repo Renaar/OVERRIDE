@@ -47,7 +47,10 @@ Réglages facultatifs, dans le `.env` de la stack (éditable dans Dockge) :
 | `ranks.json`, `titles.json` | épreuves de rang et titres |
 | `system_messages.json` | la bibliothèque de messages du Système |
 
-Ces fichiers sont copiés au premier démarrage, puis jamais écrasés : tu peux les modifier (redémarre la stack ensuite). Pour récupérer la version d'origine d'un fichier, supprime-le et redémarre.
+Ces fichiers sont installés au premier démarrage, puis **mis à jour automatiquement** à chaque nouvelle version, tant que tu ne les as pas modifiés.
+
+- Si tu modifies un fichier (redémarre la stack ensuite), ta version est conservée. La nouvelle version officielle est alors déposée à côté sous le nom `<fichier>.nouveau.json`, pour que tu puisses comparer.
+- Pour revenir à la version officielle, supprime ton fichier et redémarre.
 
 ## Mise à jour
 

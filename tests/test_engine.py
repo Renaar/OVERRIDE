@@ -374,3 +374,27 @@ def test_rank_trials_preview():
     res = ranks.evaluate_trials(c, {"pushups": 10, "pullups": 3, "weight_gain_kg": 2.5, "waist_gain_cm": 3})
     assert res[0]["ok"] and not res[1]["ok"]
     assert ranks.next_rank("E") == "D" and ranks.next_rank("S") is None
+
+
+# ---------------------------------------------------------------- how-to content
+
+def test_every_variant_and_item_is_explained(catalog):
+    import re
+    from pathlib import Path
+    figures = set(re.findall(r"^  (\w+): \{", (Path(__file__).parents[1] / "web/js/figures.js").read_text(), re.M))
+    items = [v for f in catalog.families.values() for v in f["variants"]]
+    items += [i for g in catalog.warmups.values() for i in g] + catalog.cooldown + catalog.recovery
+    for it in items:
+        assert len(it["steps"]) >= 2, it["name"]
+        assert it.get("video_query"), it["name"]
+        assert it.get("figure") is None or it["figure"] in figures, (it["name"], it.get("figure"))
+    assert sum(1 for it in items if it.get("figure")) >= 0.9 * len(items)
+
+
+def test_plan_steps_carry_howto(catalog, inventory, config):
+    plan = generator.generate_main(catalog, ctx_for(catalog, inventory, config, "BAS"), config)
+    assert plan["exercises"]["squat"]["figure"] == "goblet" and plan["exercises"]["squat"]["steps"]
+    warm = [s for s in plan["steps"] if s["block"] == "init"]
+    assert all(s["steps"] for s in warm)
+    mob = generator.generate_mobility(catalog, D0, {}, inventory, "mob_ankles")
+    assert mob["steps"][0]["figure"] == "knee_wall"

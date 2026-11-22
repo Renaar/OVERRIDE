@@ -12,7 +12,10 @@ Personal LitRPG training app, single user, French UI. Spec phases: 1 core, 2 ful
 - `app/service.py` — DB ↔ engine glue only. `app/db.py` — schema. `app/main.py` — routes.
 - `web/` — `index.html`, `css/app.css`, `js/app.js` (hash router), `js/screens/*.js`, embedded fonts.
 - `data/*.json` — tunable program data (config, skills, ranks, titles, system_messages). The DB `data/override.db` is gitignored.
-  In Docker these JSON files are copied from `/app/defaults` into the volume only when missing.
+  In Docker they are synced from `/app/defaults` at startup (`ensure_data_files`): untouched files are updated,
+  player-edited ones are kept (manifest `data/.defaults.json`).
+- Exercise explanations: `steps`/`mistakes`/`figure`/`video_query` in skills.json; figures are drawn by
+  `web/js/figure.js` (IK stick figure) from poses in `web/js/figures.js`.
 
 ## Commands
 - Tests: `python -m pytest -q`

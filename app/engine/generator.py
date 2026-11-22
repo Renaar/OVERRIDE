@@ -90,7 +90,7 @@ def prescribe(catalog: Catalog, fid: str, state: dict | None, inventory: Invento
         "max_load": lim[0] if lim else None, "load_step": lim[1] if lim else None,
         "unilateral": bool(v.get("unilateral")), "rep_s": v.get("rep_s", 3),
         "cues": v["cues"], "back_note": v.get("back_note", ""), "equipment": v["equipment"],
-        "groups": v["groups"], "video_url": v.get("video_url", ""),
+        "groups": v["groups"], **howto(v),
     }
 
 
@@ -128,9 +128,21 @@ def _step(key: str, ex: dict, block: str, label: str, rest: int, target: int | N
             "rest": int(rest), "work": work_seconds(ex, t), **extra}
 
 
-def _timed(block: str, name: str, seconds: int, label: str = "", cues: list | None = None) -> dict:
+HOWTO_KEYS = ("steps", "mistakes", "figure", "figure_tempo", "video_query", "video_url")
+
+
+def howto(item: dict) -> dict:
+    """Explanation fields shown by the 'Comment faire ?' sheet (figure, detailed steps, video search)."""
+    out = {k: item[k] for k in HOWTO_KEYS if item.get(k)}
+    out.setdefault("video_url", "")
+    return out
+
+
+def _timed(block: str, name: str, seconds: int, label: str = "", item: dict | None = None) -> dict:
+    item = item or {}
     return {"kind": "timed", "block": block, "name": name, "label": label, "seconds": int(seconds),
-            "work": int(seconds), "rest": 0, "cues": cues or []}
+            "work": int(seconds), "rest": 0, "cues": item.get("cues", []),
+            "back_note": item.get("back_note", ""), **howto(item)}
 
 
 # ---------------------------------------------------------------- estimation
@@ -283,7 +295,7 @@ def generate_main(catalog: Catalog, ctx: GenContext, config: dict) -> dict:
     max_s = qcfg["max_minutes"] * 60
 
     def build() -> list[dict]:
-        steps = [_timed("init", w["name"], w["seconds"], "Initialisation") for w in warm]
+        steps = [_timed("init", w["name"], w["seconds"], "Initialisation", w) for w in warm]
         for si, ss in enumerate(main_ss):
             n = rounds[si]
             for r in range(1, n + 1):
@@ -295,7 +307,7 @@ def generate_main(catalog: Catalog, ctx: GenContext, config: dict) -> dict:
                                        set_index=r, sets_total=n))
         if fmt and var_size > 0:
             steps += build_variable(fmt, var_exes, var_size)
-        steps += [_timed("cooldown", c["name"], c["seconds"], "Désactivation") for c in cool]
+        steps += [_timed("cooldown", c["name"], c["seconds"], "Désactivation", c) for c in cool]
         return steps
 
     steps = build()
@@ -331,7 +343,7 @@ def generate_main(catalog: Catalog, ctx: GenContext, config: dict) -> dict:
 # ---------------------------------------------------------------- recovery & mobility
 
 def generate_recovery(catalog: Catalog) -> dict:
-    steps = [_timed("recovery", r["name"], r["seconds"], "Récupération") for r in catalog.recovery]
+    steps = [_timed("recovery", r["name"], r["seconds"], "Récupération", r) for r in catalog.recovery]
     est = estimate_seconds(steps)
     return {"kind": "main", "type": "RECOVERY", "label": LABELS["RECOVERY"], "mode": "recovery",
             "rir_target": None, "rir_label": "-", "variable_format": None, "estimate_s": est,
@@ -369,7 +381,7 @@ def generate_mobility(catalog: Catalog, day: date, skills: dict[str, dict], inve
     steps = []
     for d in chosen[:n]:
         label = "Mobilité · par côté" if d.get("unilateral") else "Mobilité"
-        steps.append(_timed("mobility", d["name"], drill_seconds, label, d["cues"]))
+        steps.append(_timed("mobility", d["name"], drill_seconds, label, d))
     est = estimate_seconds(steps)
     return {"kind": "mobility", "type": "MOBILITY", "label": LABELS["MOBILITY"], "zone": weakest_zone,
             "estimate_s": est, "estimate_min": round(est / 60), "exercises": {}, "steps": steps, "notes": []}

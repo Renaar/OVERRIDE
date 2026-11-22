@@ -1,5 +1,6 @@
 // Skills tree, inventory and System journal.
 import { api } from "../api.js";
+import { openHowTo } from "../howto.js";
 import { h, win } from "../ui.js";
 
 const CATS = [["main", "MOUVEMENTS PRINCIPAUX"], ["core", "GAINAGE · SUSPENSION · PORTER"], ["accessory", "ACCESSOIRES"],
@@ -8,15 +9,18 @@ const LOCKS = { materiel: "matériel", dos: "verrou dos", niveau: "niveau préc�
 
 export async function skills(app) {
   const list = await api.get("/api/skills");
-  app.replaceChildren(...CATS.map(([cat, title]) => {
+  app.replaceChildren(h("p", { class: "muted", style: "font-size:13px;margin:0 0 12px" },
+    "Touche une compétence pour voir ses niveaux, puis un niveau pour sa fiche explicative."), ...CATS.map(([cat, title]) => {
     const fams = list.filter((f) => f.category === cat);
     if (!fams.length) return "";
     return win(title, ...fams.map((f) => {
       const cur = f.variants.find((v) => v.current) || f.variants[0];
       const details = h("div", { class: "hidden", style: "margin-top:6px" }, f.variants.map((v) =>
-        h("div", { class: `variant ${v.current ? "cur" : ""} ${v.lock ? "locked" : ""}` },
+        h("div", { class: `variant ${v.current ? "cur" : ""} ${v.lock ? "locked" : ""}`, style: "cursor:pointer",
+          onclick: (e) => { e.stopPropagation(); openHowTo(v); } },
           h("span", { class: "lv" }, `N${v.level}`),
-          h("span", { class: "grow" }, v.name, v.lock ? h("span", { class: "muted" }, ` · 🔒 ${LOCKS[v.lock] || v.lock}`) : null))));
+          h("span", { class: "grow" }, v.name, v.lock ? h("span", { class: "muted" }, ` · 🔒 ${LOCKS[v.lock] || v.lock}`) : null),
+          h("span", { class: "muted" }, "?"))));
       const extra = [f.load != null ? `${f.load} kg` : null, f.target != null && !f.zone ? `cible ${f.target}${cur.type === "time" ? " s" : " rép."}` : null].filter(Boolean).join(" · ");
       return h("div", { class: "list-item", onclick: () => details.classList.toggle("hidden"), style: "cursor:pointer" },
         h("div", { class: "spread" }, h("b", {}, f.name), h("span", { class: "num muted" }, f.zone ? `${f.level}/${f.max_level} ouverts` : `NIV. ${f.level}/${f.max_level}`)),

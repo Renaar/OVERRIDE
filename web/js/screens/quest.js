@@ -1,6 +1,7 @@
 // Quest mode (full screen). The state is saved in localStorage after every set: a reload loses nothing.
 import { api, completeQuest } from "../api.js";
 import { go } from "../app.js";
+import { figureBox, howToButton, openHowTo } from "../howto.js";
 import { h, kg, mmss, toast, vibrate, win } from "../ui.js";
 
 const EQUIP = { H: "Haltères", P: "Planche", BT: "Barre", EL: "Élastique", HL: "Haltères lourds", BC: "Banc", GL: "Gilet lesté" };
@@ -74,8 +75,10 @@ export async function render(app, [idStr]) {
       h("div", { class: "muted num", style: "font-size:12px;letter-spacing:.12em" }, s.label),
       h("div", { class: "ex-name" }, ex.name),
       h("div", { class: "ex-meta" }, `Niv. ${ex.level}/${ex.max_level} · ${eq}${ex.unilateral ? " · par côté" : ""}${loadTxt ? " · " + loadTxt : ""}`),
+      figureBox(ex),
       h("ul", { class: "cues" }, ex.cues.map((c) => h("li", {}, c))),
-      ex.back_note ? h("div", { class: "backnote" }, `⚠ ${ex.back_note}`) : null);
+      ex.back_note ? h("div", { class: "backnote" }, `⚠ ${ex.back_note}`) : null,
+      howToButton(ex));
   }
 
   function nextPreview(from) {
@@ -112,10 +115,14 @@ export async function render(app, [idStr]) {
       out.textContent = mmss(left);
       if (left <= 0) { vibrate([200, 100, 200]); advance(); }
     };
+    const n = steps[nextIndex(st.i + 1)];
+    const info = n ? exOf(n) || n : null;
     return h("div", {},
-      h("div", { class: "win-h", style: "text-align:center;margin-top:30px" }, "[ REPOS ]"),
+      h("div", { class: "win-h", style: "text-align:center;margin-top:24px" }, "[ REPOS ]"),
       out,
       nextPreview(st.i + 1),
+      info ? figureBox(info) : null,
+      info ? howToButton(info, "Comment faire l'exercice suivant ?") : null,
       h("div", { class: "actions" }, h("button", { class: "btn primary block", onclick: advance }, "Passer")));
   }
 
@@ -147,7 +154,11 @@ export async function render(app, [idStr]) {
     return h("div", {},
       h("div", { class: "muted num", style: "font-size:12px;letter-spacing:.12em" }, s.label),
       h("div", { class: "ex-name" }, s.name),
-      s.cues && s.cues.length ? h("ul", { class: "cues" }, s.cues.map((c) => h("li", {}, c))) : null,
+      figureBox(s),
+      (s.cues && s.cues.length ? s.cues : s.steps || []).length
+        ? h("ul", { class: "cues" }, (s.cues && s.cues.length ? s.cues : s.steps).map((c) => h("li", {}, c))) : null,
+      s.back_note ? h("div", { class: "backnote" }, `⚠ ${s.back_note}`) : null,
+      s.cues && s.cues.length ? howToButton(s) : null,
       out,
       nextPreview(st.i + 1),
       h("div", { class: "actions row" }, btn, h("button", { class: "btn primary grow", onclick: () => { if (!st.started) { st.started = Date.now(); } advance(); } }, "Suivant")));
@@ -292,7 +303,8 @@ export async function render(app, [idStr]) {
   function itemsList(s) {
     return h("ul", { class: "cues" }, s.items.map((it) => {
       const ex = plan.exercises[it.ex];
-      return h("li", {}, `${ex.name} · ${it.target}${ex.type === "time" ? " s" : " rép."}${ex.unilateral ? " par côté" : ""}${ex.load != null ? " · " + kg(ex.load) : ""}`);
+      return h("li", {}, `${ex.name} · ${it.target}${ex.type === "time" ? " s" : " rép."}${ex.unilateral ? " par côté" : ""}${ex.load != null ? " · " + kg(ex.load) : ""} `,
+        ex.steps ? h("button", { class: "btn ghost", style: "min-height:32px;padding:2px 10px;font-size:12px", onclick: () => openHowTo(ex) }, "?") : null);
     }));
   }
 

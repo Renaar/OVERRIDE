@@ -36,7 +36,11 @@
           "cues": ["Mains sur une table ou un plan de travail", "Corps gainé de la tête aux talons", "Poitrine jusqu'au rebord"],
           "back_note": "",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Pose les mains sur un rebord stable (table, plan de travail), un peu plus écartées que les épaules.", "Recule les pieds jusqu'à ce que ton corps forme une ligne droite de la tête aux talons.", "Descends la poitrine vers le rebord en pliant les coudes, qui partent en arrière à 45° du corps.", "Pousse pour revenir bras tendus, sans casser la ligne du corps.", "Plus le rebord est haut, plus c'est facile."],
+          "mistakes": ["Fesses en l'air ou ventre qui tombe : serre les fesses et le ventre.", "Coudes ouverts à 90° : rapproche-les du corps."],
+          "figure": "pushup_incline",
+          "video_query": "pompes inclinées mains surélevées technique"
         },
         {
           "id": "push_h_2",
@@ -49,7 +53,11 @@
           "cues": ["Mains sous les épaules", "Coudes à 45° du corps", "Poitrine à un poing du sol"],
           "back_note": "Fesses serrées : le bas du dos ne doit pas creuser.",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Mains au sol sous les épaules, doigts vers l'avant, pieds joints ou légèrement écartés.", "Gaine le corps : serre les fesses et rentre légèrement le nombril.", "Descends d'un bloc jusqu'à ce que la poitrine soit à un poing du sol, coudes à 45° du corps.", "Pousse le sol pour remonter jusqu'aux bras tendus. Inspire en descendant, souffle en poussant."],
+          "mistakes": ["Bas du dos qui se creuse.", "Tête qui pique vers le sol : regarde le sol un peu devant tes mains."],
+          "figure": "pushup",
+          "video_query": "pompes technique"
         },
         {
           "id": "push_h_3",
@@ -63,7 +71,12 @@
           "back_note": "Fesses serrées : le bas du dos ne doit pas creuser.",
           "video_url": "",
           "load_mode": "none",
-          "rep_s": 5
+          "rep_s": 5,
+          "steps": ["Même position que les pompes au sol.", "Descends en comptant 3 secondes.", "Marque 1 seconde de pause en bas, sans toucher le sol ni te relâcher.", "Remonte en 1 seconde."],
+          "mistakes": ["Accélérer la descente en fin de série : garde le rythme, quitte à faire moins de répétitions."],
+          "figure": "pushup",
+          "figure_tempo": [3, 1, 1, 0.4],
+          "video_query": "pompes tempo lent"
         },
         {
           "id": "push_h_4",
@@ -76,7 +89,11 @@
           "cues": ["Pieds sur une chaise", "Corps gainé", "Coudes à 45°"],
           "back_note": "Fesses serrées : le bas du dos ne doit pas creuser.",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Pieds posés sur une chaise ou le canapé, mains au sol sous les épaules.", "Corps droit, fesses serrées : le bassin ne monte pas et ne tombe pas.", "Descends jusqu'à ce que la poitrine approche du sol.", "Pousse pour remonter bras tendus. Plus les pieds sont hauts, plus c'est dur."],
+          "mistakes": ["Bas du dos qui se creuse : ça arrive vite avec les pieds en hauteur."],
+          "figure": "pushup_decline",
+          "video_query": "pompes pieds surélevés technique"
         },
         {
           "id": "push_h_5",
@@ -89,7 +106,11 @@
           "cues": ["Mains sur les haltères posés au sol", "Descends sous le niveau des mains", "Amplitude contrôlée"],
           "back_note": "Fesses serrées : le bas du dos ne doit pas creuser.",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Pose deux haltères au sol, parallèles, à largeur d'épaules. Vérifie qu'ils ne roulent pas.", "Prends les poignées, poignets bien droits, corps gainé.", "Descends plus bas que tes mains : la poitrine passe entre les haltères.", "Remonte en poussant fort jusqu'aux bras tendus."],
+          "mistakes": ["Haltères qui roulent : utilise des disques plats ou cale-les.", "Épaule qui tire en bas : réduis l'amplitude."],
+          "figure": "pushup_deficit",
+          "video_query": "deficit push up dumbbells"
         },
         {
           "id": "push_h_6",
@@ -102,7 +123,11 @@
           "cues": ["Mains très écartées", "Descends vers un bras, l'autre reste tendu", "Alterne les côtés"],
           "back_note": "",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Mains au sol très écartées (environ deux fois la largeur des épaules), doigts vers l'extérieur.", "Descends en pliant un seul bras : le poids part vers cette main.", "L'autre bras reste tendu et sert seulement d'appui.", "Remonte, puis change de côté à chaque répétition."],
+          "mistakes": ["Bassin qui tourne : garde les hanches face au sol."],
+          "figure": null,
+          "video_query": "archer push up tutorial"
         },
         {
           "id": "push_h_7",
@@ -115,7 +140,11 @@
           "cues": ["Gilet bien ajusté", "Même technique que les pompes au sol", "Gainage maximal"],
           "back_note": "Fesses serrées : le bas du dos ne doit pas creuser.",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Mets le gilet lesté bien serré, le poids réparti sur le dos.", "Gaine le corps : serre les fesses et rentre légèrement le nombril.", "Descends d'un bloc jusqu'à ce que la poitrine soit à un poing du sol, coudes à 45° du corps.", "Pousse le sol pour remonter jusqu'aux bras tendus. Inspire en descendant, souffle en poussant."],
+          "mistakes": ["Gilet qui ballotte : serre les sangles.", "Dos qui se creuse sous la charge."],
+          "figure": "pushup",
+          "video_query": "pompes lestées gilet"
         }
       ]
     },
@@ -138,7 +167,11 @@
           "back_note": "",
           "video_url": "",
           "load_mode": "pair",
-          "start_load_ratio": 1.0
+          "start_load_ratio": 1.0,
+          "steps": ["Allongé sur le dos au sol, genoux pliés, pieds à plat.", "Un haltère dans chaque main, bras tendus au-dessus de la poitrine.", "Descends jusqu'à ce que les coudes touchent doucement le sol, à 45° du corps.", "Marque une courte pause, puis pousse vers le plafond."],
+          "mistakes": ["Coudes qui rebondissent sur le sol.", "Poignets cassés vers l'arrière : garde-les droits."],
+          "figure": "floor_press",
+          "video_query": "dumbbell floor press"
         },
         {
           "id": "push_h_db_2",
@@ -152,7 +185,11 @@
           "back_note": "",
           "video_url": "",
           "load_mode": "pair",
-          "start_load_ratio": 0.6
+          "start_load_ratio": 0.6,
+          "steps": ["Allongé sur le banc, pieds bien à plat au sol.", "Serre les omoplates l'une vers l'autre et garde-les collées au banc.", "Descends les haltères sur les côtés de la poitrine, coudes à 45°.", "Pousse vers le haut en rapprochant légèrement les haltères."],
+          "mistakes": ["Fesses qui décollent du banc.", "Descente trop rapide."],
+          "figure": "bench_press",
+          "video_query": "développé couché haltères technique"
         }
       ]
     },
@@ -175,7 +212,11 @@
           "video_url": "",
           "load_mode": "single",
           "unilateral": true,
-          "start_load_ratio": 1.0
+          "start_load_ratio": 1.0,
+          "steps": ["Pose une main et le genou du même côté sur une chaise (ou un banc). L'autre pied au sol, un peu en arrière.", "Dos plat, presque parallèle au sol. L'haltère pend sous l'épaule, bras tendu.", "Tire le coude vers la hanche (pas vers le plafond), coude près du corps.", "En haut, serre l'omoplate vers la colonne une seconde.", "Redescends lentement jusqu'au bras tendu. Fais toutes les répétitions, puis change de côté."],
+          "mistakes": ["Tourner le buste pour lever la charge.", "Dos rond : garde la poitrine ouverte."],
+          "figure": "row",
+          "video_query": "rowing haltère un bras technique"
         },
         {
           "id": "pull_h_2",
@@ -191,7 +232,12 @@
           "load_mode": "single",
           "unilateral": true,
           "rep_s": 7,
-          "start_load_ratio": 1.0
+          "start_load_ratio": 1.0,
+          "steps": ["Même position que le rowing un bras.", "Tire en 1 seconde, coude vers la hanche.", "Bloque 2 secondes en haut, omoplate serrée.", "Redescends en 4 secondes en contrôlant."],
+          "mistakes": ["Lâcher la charge en descente : c'est la phase la plus utile ici."],
+          "figure": "row",
+          "figure_tempo": [1, 2, 4, 0.3],
+          "video_query": "rowing haltère tempo lent"
         },
         {
           "id": "pull_h_3",
@@ -205,7 +251,11 @@
           "back_note": "",
           "video_url": "",
           "load_mode": "pair",
-          "start_load_ratio": 0.6
+          "start_load_ratio": 0.6,
+          "steps": ["Règle le banc à 30-45°. Allonge-toi dessus sur le ventre, poitrine en appui, pieds au sol.", "Un haltère dans chaque main, bras tendus vers le sol.", "Tire les deux coudes vers l'arrière, le long du corps.", "Serre les omoplates en haut, puis redescends lentement."],
+          "mistakes": ["Décoller la poitrine du banc pour tricher.", "Hausser les épaules vers les oreilles."],
+          "figure": "row_incline",
+          "video_query": "chest supported dumbbell row"
         },
         {
           "id": "pull_h_4",
@@ -220,7 +270,11 @@
           "video_url": "",
           "load_mode": "single",
           "unilateral": true,
-          "start_load_ratio": 0.7
+          "start_load_ratio": 0.7,
+          "steps": ["Pose une main et le genou du même côté sur une chaise (ou un banc). L'autre pied au sol, un peu en arrière.", "Dos plat, presque parallèle au sol. L'haltère pend sous l'épaule, bras tendu.", "Tire le coude vers la hanche (pas vers le plafond), coude près du corps.", "En haut, serre l'omoplate vers la colonne une seconde.", "Charge lourde : prise ferme, dos plat, et redescends toujours lentement."],
+          "mistakes": ["Tourner le buste pour lever la charge.", "Dos rond : garde la poitrine ouverte."],
+          "figure": "row",
+          "video_query": "heavy one arm dumbbell row"
         }
       ]
     },
@@ -242,7 +296,11 @@
           "cues": ["Élastique à hauteur de poitrine", "Coudes près du corps", "Serre les omoplates 1 s"],
           "back_note": "",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Fixe l'élastique à hauteur de poitrine (poignée de porte fermée, poteau solide).", "Recule jusqu'à sentir une tension, pieds largeur de hanches, genoux souples.", "Tire les mains vers les côtes, coudes près du corps.", "Serre les omoplates 1 seconde, puis reviens bras tendus en contrôlant."],
+          "mistakes": ["Se pencher en arrière pour tirer.", "Épaules qui montent."],
+          "figure": "band_row",
+          "video_query": "tirage horizontal élastique"
         }
       ]
     },
@@ -264,7 +322,11 @@
           "back_note": "Ne creuse pas le dos en poussant : côtes basses.",
           "video_url": "",
           "load_mode": "pair",
-          "start_load_ratio": 0.7
+          "start_load_ratio": 0.7,
+          "steps": ["Assis sur une chaise avec dossier, dos contre le dossier, pieds au sol.", "Haltères au niveau des épaules, paumes vers l'avant, coudes sous les poignets.", "Pousse les haltères au-dessus de la tête jusqu'aux bras presque tendus.", "Redescends lentement jusqu'au niveau des oreilles.", "Côtes basses : le bas du dos ne doit pas se creuser."],
+          "mistakes": ["Cambrer le dos pour pousser.", "Haltères qui partent vers l'avant."],
+          "figure": "ohp_seated",
+          "video_query": "développé épaules haltères assis"
         },
         {
           "id": "push_v_2",
@@ -277,7 +339,11 @@
           "cues": ["Bassin haut, forme de V inversé", "Tête vers le sol entre les mains", "Coudes vers l'arrière"],
           "back_note": "",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Place-toi en position de pompe, puis monte les hanches : ton corps forme un V inversé.", "Mains largeur d'épaules, jambes tendues ou légèrement fléchies.", "Plie les coudes pour amener le sommet de la tête vers le sol, un peu devant tes mains.", "Pousse pour revenir. Plus tes pieds sont proches des mains, plus c'est dur."],
+          "mistakes": ["Descendre le nez au lieu du sommet de la tête.", "Coudes qui s'ouvrent sur les côtés."],
+          "figure": "pike",
+          "video_query": "pike push up technique"
         },
         {
           "id": "push_v_3",
@@ -290,7 +356,11 @@
           "cues": ["Pieds sur une chaise", "Hanches au-dessus des épaules", "Descente contrôlée"],
           "back_note": "",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Pieds sur une chaise, mains au sol, hanches hautes au-dessus des épaules.", "Ton buste est presque vertical, tête entre les bras.", "Descends le sommet de la tête vers le sol en pliant les coudes.", "Pousse pour remonter bras tendus."],
+          "mistakes": ["Hanches qui descendent : le mouvement redevient une pompe classique."],
+          "figure": "pike_decline",
+          "video_query": "elevated pike push up"
         },
         {
           "id": "push_v_4",
@@ -304,7 +374,11 @@
           "back_note": "Ne creuse pas le dos en poussant : côtes basses.",
           "video_url": "",
           "load_mode": "pair",
-          "start_load_ratio": 0.6
+          "start_load_ratio": 0.6,
+          "steps": ["Banc réglé à la verticale, dos bien appuyé, pieds au sol.", "Haltères au niveau des épaules, paumes vers l'avant, coudes sous les poignets.", "Pousse les haltères au-dessus de la tête jusqu'aux bras presque tendus.", "Redescends lentement jusqu'au niveau des oreilles.", "Côtes basses : le bas du dos ne doit pas se creuser."],
+          "mistakes": ["Cambrer le dos pour pousser.", "Haltères qui partent vers l'avant."],
+          "figure": "ohp_seated",
+          "video_query": "seated dumbbell shoulder press"
         }
       ]
     },
@@ -325,7 +399,11 @@
           "cues": ["Grandes prises uniquement", "Bras tendus, monte en serrant les omoplates", "Redescends lentement"],
           "back_note": "",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Suspends-toi à la planche par les grandes prises, bras tendus, épaules relâchées vers les oreilles.", "Sans plier les coudes, tire les épaules vers le bas : le corps monte de quelques centimètres.", "Tiens 1 seconde, puis relâche lentement.", "Trop dur ? Garde les pieds au sol pour te délester."],
+          "mistakes": ["Plier les coudes : ce n'est pas une traction.", "Balancer les jambes."],
+          "figure": "scap_pull",
+          "video_query": "scapular pull up hangboard"
         },
         {
           "id": "pull_v_2",
@@ -339,7 +417,11 @@
           "back_note": "Garde le bas du dos plaqué au sol.",
           "video_url": "",
           "load_mode": "single",
-          "start_load_ratio": 0.8
+          "start_load_ratio": 0.8,
+          "steps": ["Allongé sur le dos au sol, genoux pliés. Tiens un haltère à deux mains au-dessus de la poitrine.", "Bras presque tendus, descends l'haltère en arc de cercle derrière ta tête.", "Va jusqu'à frôler le sol ou jusqu'à sentir l'étirement sous les bras.", "Ramène l'haltère au-dessus de la poitrine par le même chemin."],
+          "mistakes": ["Bas du dos qui se creuse quand les bras passent derrière : garde-le plaqué au sol."],
+          "figure": "pullover",
+          "video_query": "pullover haltère au sol"
         },
         {
           "id": "pull_v_3",
@@ -352,7 +434,11 @@
           "cues": ["Saute en haut de la barre", "Descends en 4 à 5 s", "Bras tendus en bas"],
           "back_note": "",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Monte en haut de la barre (saut ou chaise) : menton au-dessus de la barre.", "Descends le plus lentement possible, 4 à 5 secondes, jusqu'aux bras tendus.", "Pose les pieds, remonte, recommence."],
+          "mistakes": ["Se laisser tomber à la fin : contrôle jusqu'en bas."],
+          "figure": "pullup_negative",
+          "video_query": "tractions négatives débutant"
         },
         {
           "id": "pull_v_4",
@@ -365,7 +451,11 @@
           "cues": ["Élastique sous le pied ou le genou", "Menton au-dessus de la barre", "Descente contrôlée"],
           "back_note": "",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Accroche un élastique à la barre et place un pied (ou un genou) dans la boucle.", "Prise un peu plus large que les épaules, bras tendus.", "Tire jusqu'à passer le menton au-dessus de la barre.", "Redescends en contrôlant. Élastique plus fin = plus difficile."],
+          "mistakes": ["Rebondir en bas avec l'élastique.", "Ne pas revenir bras tendus."],
+          "figure": "pullup_assisted",
+          "video_query": "tractions assistées élastique"
         },
         {
           "id": "pull_v_5",
@@ -378,7 +468,11 @@
           "cues": ["Pars bras tendus", "Menton au-dessus de la barre", "Pas d'élan"],
           "back_note": "",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Suspends-toi bras tendus, prise un peu plus large que les épaules, paumes vers l'avant.", "Engage les omoplates (épaules basses) avant de tirer.", "Tire jusqu'à passer le menton au-dessus de la barre, sans élan.", "Redescends jusqu'aux bras tendus."],
+          "mistakes": ["Balancer les jambes.", "Demi-répétitions."],
+          "figure": "pullup",
+          "video_query": "tractions strictes technique"
         },
         {
           "id": "pull_v_6",
@@ -391,7 +485,11 @@
           "cues": ["Gilet bien ajusté", "Amplitude complète", "Pas d'élan"],
           "back_note": "",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Ajoute le gilet lesté, bien serré.", "Suspends-toi bras tendus, prise un peu plus large que les épaules, paumes vers l'avant.", "Engage les omoplates (épaules basses) avant de tirer.", "Tire jusqu'à passer le menton au-dessus de la barre, sans élan.", "Redescends jusqu'aux bras tendus."],
+          "mistakes": ["Balancer les jambes."],
+          "figure": "pullup",
+          "video_query": "tractions lestées"
         }
       ]
     },
@@ -413,7 +511,11 @@
           "back_note": "Poitrine fière, dos neutre en bas.",
           "video_url": "",
           "load_mode": "single",
-          "start_load_ratio": 1.0
+          "start_load_ratio": 1.0,
+          "steps": ["Tiens un haltère vertical contre la poitrine, à deux mains, coudes vers le bas.", "Pieds un peu plus larges que les hanches, pointes légèrement vers l'extérieur.", "Descends en poussant les hanches en arrière et en bas, comme pour t'asseoir entre tes talons.", "Genoux dans l'axe des pieds, talons au sol, poitrine fière.", "Remonte en poussant le sol avec tout le pied."],
+          "mistakes": ["Genoux qui rentrent vers l'intérieur.", "Talons qui décollent : écarte un peu plus les pieds."],
+          "figure": "goblet",
+          "video_query": "squat gobelet technique"
         },
         {
           "id": "squat_2",
@@ -428,7 +530,12 @@
           "video_url": "",
           "load_mode": "single",
           "rep_s": 5,
-          "start_load_ratio": 1.0
+          "start_load_ratio": 1.0,
+          "steps": ["Même position que le squat gobelet.", "Descends en 3 secondes.", "Pause 1 seconde en bas.", "Remonte en 1 seconde."],
+          "mistakes": ["Genoux qui rentrent vers l'intérieur.", "Talons qui décollent : écarte un peu plus les pieds."],
+          "figure": "goblet",
+          "figure_tempo": [3, 1, 1, 0.4],
+          "video_query": "goblet squat tempo"
         },
         {
           "id": "squat_3",
@@ -443,7 +550,12 @@
           "video_url": "",
           "load_mode": "single",
           "rep_s": 5,
-          "start_load_ratio": 1.0
+          "start_load_ratio": 1.0,
+          "steps": ["Même position que le squat gobelet.", "Descends normalement.", "Reste 2 secondes en bas, gainé, sans te poser ni rebondir.", "Remonte d'un bloc."],
+          "mistakes": ["Genoux qui rentrent vers l'intérieur.", "Talons qui décollent : écarte un peu plus les pieds."],
+          "figure": "goblet",
+          "figure_tempo": [1.2, 2, 1, 0.4],
+          "video_query": "paused goblet squat"
         },
         {
           "id": "squat_4",
@@ -458,7 +570,11 @@
           "video_url": "",
           "load_mode": "single",
           "rep_s": 6,
-          "start_load_ratio": 1.0
+          "start_load_ratio": 1.0,
+          "steps": ["Même position que le squat gobelet.", "Descends tout en bas.", "Remonte à mi-hauteur (cuisses parallèles au sol).", "Redescends tout en bas.", "Remonte complètement : c'est 1 répétition."],
+          "mistakes": ["Genoux qui rentrent vers l'intérieur.", "Talons qui décollent : écarte un peu plus les pieds."],
+          "figure": "goblet_15",
+          "video_query": "1.5 rep goblet squat"
         },
         {
           "id": "squat_5",
@@ -473,7 +589,11 @@
           "video_url": "",
           "load_mode": "none",
           "unilateral": true,
-          "rep_s": 4
+          "rep_s": 4,
+          "steps": ["Place-toi devant une chaise ou une boîte, dos à elle.", "Tiens-toi sur une jambe, l'autre tendue devant toi, bras tendus devant pour l'équilibre.", "Descends lentement jusqu'à t'asseoir sur la boîte, sans te laisser tomber.", "Remonte sur la même jambe, sans élan. Plus la boîte est basse, plus c'est dur."],
+          "mistakes": ["Genou qui part vers l'intérieur.", "Se laisser tomber sur la boîte."],
+          "figure": "pistol_box",
+          "video_query": "box pistol squat"
         },
         {
           "id": "squat_6",
@@ -487,7 +607,11 @@
           "back_note": "Poitrine fière, dos neutre en bas.",
           "video_url": "",
           "load_mode": "single",
-          "start_load_ratio": 0.8
+          "start_load_ratio": 0.8,
+          "steps": ["Tiens l'haltère lourd par une extrémité, contre le sternum.", "Pieds un peu plus larges que les hanches, pointes légèrement vers l'extérieur.", "Descends en poussant les hanches en arrière et en bas, comme pour t'asseoir entre tes talons.", "Genoux dans l'axe des pieds, talons au sol, poitrine fière.", "Remonte en poussant le sol avec tout le pied."],
+          "mistakes": ["Genoux qui rentrent vers l'intérieur.", "Talons qui décollent : écarte un peu plus les pieds."],
+          "figure": "goblet",
+          "video_query": "heavy goblet squat"
         }
       ]
     },
@@ -509,7 +633,11 @@
           "back_note": "",
           "video_url": "",
           "load_mode": "none",
-          "unilateral": true
+          "unilateral": true,
+          "steps": ["Debout, pieds largeur de hanches, mains sur les hanches.", "Fais un grand pas en arrière et descends le genou arrière vers le sol, sans le cogner.", "Le genou avant reste au-dessus du pied, le buste droit.", "Pousse avec le talon avant pour revenir debout. Alterne les jambes."],
+          "mistakes": ["Pas trop court : le genou avant part loin devant les orteils.", "Buste qui s'effondre vers l'avant."],
+          "figure": "lunge",
+          "video_query": "fente arrière technique"
         },
         {
           "id": "lunge_2",
@@ -524,7 +652,11 @@
           "video_url": "",
           "load_mode": "pair",
           "unilateral": true,
-          "start_load_ratio": 0.8
+          "start_load_ratio": 0.8,
+          "steps": ["Debout, un haltère dans chaque main, bras le long du corps.", "Fais un grand pas en arrière et descends le genou arrière vers le sol, sans le cogner.", "Le genou avant reste au-dessus du pied, le buste droit.", "Pousse avec le talon avant pour revenir debout. Alterne les jambes."],
+          "mistakes": ["Pas trop court : le genou avant part loin devant les orteils.", "Buste qui s'effondre vers l'avant."],
+          "figure": "lunge_db",
+          "video_query": "reverse lunge dumbbells"
         },
         {
           "id": "lunge_3",
@@ -539,7 +671,11 @@
           "video_url": "",
           "load_mode": "pair",
           "unilateral": true,
-          "start_load_ratio": 0.6
+          "start_load_ratio": 0.6,
+          "steps": ["Dos à une chaise, pose le dessus du pied arrière sur l'assise.", "Avance le pied avant assez loin pour que le genou reste au-dessus de la cheville en bas.", "Haltères le long du corps, descends à la verticale jusqu'à ce que le genou arrière frôle le sol.", "Pousse avec le pied avant pour remonter. Fais tout un côté, puis l'autre."],
+          "mistakes": ["Pied avant trop près de la chaise.", "Se pencher sur le côté."],
+          "figure": "bulgarian",
+          "video_query": "squat bulgare technique"
         },
         {
           "id": "lunge_4",
@@ -555,7 +691,12 @@
           "load_mode": "pair",
           "unilateral": true,
           "rep_s": 5,
-          "start_load_ratio": 0.6
+          "start_load_ratio": 0.6,
+          "steps": ["Dos à une chaise, pose le dessus du pied arrière sur l'assise.", "Avance le pied avant assez loin pour que le genou reste au-dessus de la cheville en bas.", "Descends en 3 secondes, remonte en 1 seconde.", "Pousse avec le pied avant pour remonter. Fais tout un côté, puis l'autre."],
+          "mistakes": ["Pied avant trop près de la chaise.", "Se pencher sur le côté."],
+          "figure": "bulgarian",
+          "figure_tempo": [3, 0.3, 1, 0.4],
+          "video_query": "bulgarian split squat tempo"
         },
         {
           "id": "lunge_5",
@@ -570,7 +711,11 @@
           "video_url": "",
           "load_mode": "pair",
           "unilateral": true,
-          "start_load_ratio": 0.6
+          "start_load_ratio": 0.6,
+          "steps": ["Pied avant sur une marche ou un gros livre (5 à 10 cm).", "Dos à une chaise, pose le dessus du pied arrière sur l'assise.", "Avance le pied avant assez loin pour que le genou reste au-dessus de la cheville en bas.", "Haltères le long du corps, descends à la verticale jusqu'à ce que le genou arrière frôle le sol.", "Pousse avec le pied avant pour remonter. Fais tout un côté, puis l'autre."],
+          "mistakes": ["Pied avant trop près de la chaise.", "Se pencher sur le côté."],
+          "figure": "bulgarian_deficit",
+          "video_query": "deficit bulgarian split squat"
         },
         {
           "id": "lunge_6",
@@ -585,7 +730,11 @@
           "video_url": "",
           "load_mode": "pair",
           "unilateral": true,
-          "start_load_ratio": 0.6
+          "start_load_ratio": 0.6,
+          "steps": ["Dos à une chaise, pose le dessus du pied arrière sur l'assise.", "Avance le pied avant assez loin pour que le genou reste au-dessus de la cheville en bas.", "Haltères le long du corps, descends à la verticale jusqu'à ce que le genou arrière frôle le sol.", "Pousse avec le pied avant pour remonter. Fais tout un côté, puis l'autre."],
+          "mistakes": ["Pied avant trop près de la chaise.", "Se pencher sur le côté."],
+          "figure": "bulgarian",
+          "video_query": "heavy bulgarian split squat"
         }
       ]
     },
@@ -607,7 +756,11 @@
           "back_note": "Monte avec les fessiers, pas en creusant le dos.",
           "video_url": "",
           "load_mode": "single",
-          "start_load_ratio": 1.0
+          "start_load_ratio": 1.0,
+          "steps": ["Allongé sur le dos, genoux pliés, pieds à plat près des fesses, largeur de hanches.", "Pose l'haltère sur le haut des hanches et tiens-le à deux mains.", "Pousse dans les talons et monte les hanches jusqu'à aligner genoux, hanches et épaules.", "Serre fort les fessiers 1 seconde en haut, puis redescends lentement."],
+          "mistakes": ["Cambrer le bas du dos au lieu de serrer les fessiers.", "Pousser avec la pointe des pieds."],
+          "figure": "bridge",
+          "video_query": "pont fessier technique"
         },
         {
           "id": "hinge_2",
@@ -621,7 +774,11 @@
           "back_note": "Monte avec les fessiers, pas en creusant le dos.",
           "video_url": "",
           "load_mode": "single",
-          "start_load_ratio": 1.0
+          "start_load_ratio": 1.0,
+          "steps": ["Assis au sol, le haut du dos (sous les omoplates) contre le bord du canapé.", "Haltère sur les hanches, pieds à plat, largeur de hanches.", "Pousse dans les talons pour monter les hanches jusqu'à ce que le buste soit à l'horizontale.", "En haut : tibias verticaux, menton rentré, fessiers serrés 1 seconde.", "Redescends en contrôlant."],
+          "mistakes": ["Lever le menton et cambrer : regarde devant toi, côtes basses."],
+          "figure": "hip_thrust",
+          "video_query": "hip thrust canapé maison"
         },
         {
           "id": "hinge_3",
@@ -636,7 +793,11 @@
           "video_url": "",
           "load_mode": "single",
           "unilateral": true,
-          "start_load_ratio": 1.0
+          "start_load_ratio": 1.0,
+          "steps": ["Même position que le hip thrust, une jambe tendue en l'air.", "Pousse dans le talon de la jambe d'appui pour monter.", "Le bassin reste horizontal : il ne penche pas d'un côté.", "Fais tout un côté, puis l'autre."],
+          "mistakes": ["Bassin qui bascule.", "Cambrer en haut."],
+          "figure": "hip_thrust_sl",
+          "video_query": "single leg hip thrust"
         },
         {
           "id": "hinge_4",
@@ -652,7 +813,11 @@
           "load_mode": "pair",
           "rep_s": 5,
           "start_load_ratio": 1.0,
-          "back_lock": true
+          "back_lock": true,
+          "steps": ["Debout, pieds largeur de hanches, un haltère dans chaque main devant les cuisses.", "Genoux légèrement fléchis : ils restent ainsi pendant tout le mouvement.", "Recule les fesses comme pour fermer une porte avec : le buste se penche, le dos reste plat.", "Descends en 3 secondes, haltères le long des cuisses, jusqu'à sentir l'étirement derrière les cuisses.", "Remonte en poussant les hanches vers l'avant et en serrant les fessiers."],
+          "mistakes": ["Dos qui s'arrondit : arrête la descente plus haut.", "Plier les genoux comme pour un squat."],
+          "figure": "rdl",
+          "video_query": "soulevé de terre roumain haltères technique"
         },
         {
           "id": "hinge_5",
@@ -669,7 +834,11 @@
           "unilateral": true,
           "rep_s": 4,
           "start_load_ratio": 1.0,
-          "back_lock": true
+          "back_lock": true,
+          "steps": ["Debout sur une jambe, genou d'appui légèrement fléchi, un haltère dans la main opposée.", "Penche le buste pendant que la jambe libre part en arrière, alignée avec le dos.", "Le bassin reste face au sol : ne l'ouvre pas sur le côté.", "Descends jusqu'à l'étirement, puis remonte. Tiens-toi au mur au début si besoin."],
+          "mistakes": ["Bassin qui s'ouvre.", "Dos rond."],
+          "figure": "rdl_sl",
+          "video_query": "single leg romanian deadlift dumbbell"
         },
         {
           "id": "hinge_6",
@@ -685,7 +854,11 @@
           "load_mode": "pair",
           "rep_s": 4,
           "start_load_ratio": 0.7,
-          "back_lock": true
+          "back_lock": true,
+          "steps": ["Debout, pieds largeur de hanches, un haltère dans chaque main devant les cuisses.", "Genoux légèrement fléchis : ils restent ainsi pendant tout le mouvement.", "Recule les fesses comme pour fermer une porte avec : le buste se penche, le dos reste plat.", "Descends en 3 secondes, haltères le long des cuisses, jusqu'à sentir l'étirement derrière les cuisses.", "Remonte en poussant les hanches vers l'avant et en serrant les fessiers."],
+          "mistakes": ["Dos qui s'arrondit : arrête la descente plus haut.", "Plier les genoux comme pour un squat."],
+          "figure": "rdl",
+          "video_query": "heavy dumbbell romanian deadlift"
         }
       ]
     },
@@ -707,7 +880,11 @@
           "back_note": "Le bas du dos ne bouge pas : seule la tête et les épaules montent.",
           "video_url": "",
           "load_mode": "none",
-          "rep_s": 10
+          "rep_s": 10,
+          "steps": ["Allongé sur le dos, une jambe pliée (pied au sol), l'autre tendue.", "Glisse les mains à plat sous le creux du bas du dos pour garder sa courbure naturelle.", "Gaine le ventre, puis décolle la tête et les épaules de 2 à 3 cm seulement, d'un bloc.", "Tiens 8 secondes en respirant, puis redescends. Change de jambe pliée à mi-série."],
+          "mistakes": ["Rentrer le menton ou tirer sur la nuque.", "Écraser les mains avec le bas du dos."],
+          "figure": "mcgill",
+          "video_query": "McGill curl up"
         },
         {
           "id": "core_ant_2",
@@ -720,7 +897,11 @@
           "cues": ["Bas du dos plaqué au sol", "Bras et jambe opposés s'allongent", "Expire en allongeant"],
           "back_note": "Si le dos décolle, réduis l'amplitude.",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Allongé sur le dos, bras tendus vers le plafond, genoux pliés à 90° au-dessus des hanches.", "Plaque le bas du dos au sol en expirant.", "Allonge lentement un bras derrière la tête et la jambe opposée vers le sol, sans les poser.", "Reviens au centre et change de côté. Le dos ne décolle jamais."],
+          "mistakes": ["Dos qui se creuse quand la jambe descend : réduis l'amplitude.", "Aller trop vite."],
+          "figure": "dead_bug",
+          "video_query": "dead bug exercice"
         },
         {
           "id": "core_ant_3",
@@ -734,7 +915,11 @@
           "back_note": "Si le dos décolle, réduis l'amplitude.",
           "video_url": "",
           "load_mode": "single",
-          "start_load_ratio": 0.5
+          "start_load_ratio": 0.5,
+          "steps": ["Même position que le dead bug, un haltère tenu à deux mains, bras tendus.", "Les bras restent immobiles : seules les jambes bougent, l'une après l'autre.", "Garde le bas du dos plaqué au sol."],
+          "mistakes": ["Dos qui se creuse."],
+          "figure": "dead_bug_db",
+          "video_query": "dead bug dumbbell hold"
         },
         {
           "id": "core_ant_4",
@@ -747,7 +932,11 @@
           "cues": ["Avant-bras sous les épaules", "Fesses serrées, bassin légèrement rentré", "Respire calmement"],
           "back_note": "Arrête dès que le bas du dos creuse.",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Avant-bras au sol, coudes sous les épaules, jambes tendues, pieds largeur de hanches.", "Serre les fesses et rentre légèrement le bassin.", "Corps en ligne droite de la tête aux talons, regard vers le sol.", "Respire calmement. Arrête dès que le bas du dos se creuse."],
+          "mistakes": ["Fesses trop hautes ou bassin qui tombe.", "Bloquer sa respiration."],
+          "figure": "plank",
+          "video_query": "planche gainage technique"
         },
         {
           "id": "core_ant_5",
@@ -760,7 +949,11 @@
           "cues": ["Coudes 10 cm devant les épaules", "Bassin rentré", "Corps rigide"],
           "back_note": "Arrête dès que le bas du dos creuse.",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Avance les coudes de 10 cm devant les épaules : le levier est plus long.", "Serre les fesses et rentre légèrement le bassin.", "Corps en ligne droite de la tête aux talons, regard vers le sol.", "Respire calmement. Arrête dès que le bas du dos se creuse."],
+          "mistakes": ["Bassin qui tombe."],
+          "figure": "plank_ext",
+          "video_query": "long lever plank"
         },
         {
           "id": "core_ant_6",
@@ -773,7 +966,11 @@
           "cues": ["Gilet bien ajusté", "Bassin rentré", "Corps rigide"],
           "back_note": "Arrête dès que le bas du dos creuse.",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Mets le gilet lesté, bien serré.", "Avant-bras au sol, coudes sous les épaules, jambes tendues, pieds largeur de hanches.", "Serre les fesses et rentre légèrement le bassin.", "Corps en ligne droite de la tête aux talons, regard vers le sol.", "Respire calmement. Arrête dès que le bas du dos se creuse."],
+          "mistakes": ["Bassin qui tombe."],
+          "figure": "plank",
+          "video_query": "weighted plank"
         }
       ]
     },
@@ -795,7 +992,11 @@
           "back_note": "",
           "video_url": "",
           "load_mode": "none",
-          "unilateral": true
+          "unilateral": true,
+          "steps": ["Allongé sur le côté, coude sous l'épaule, genoux pliés à 90° (pieds derrière toi).", "Monte les hanches pour aligner genoux, hanches et épaules.", "Main du dessus sur la hanche ou tendue vers le plafond.", "Tiens la durée en respirant, puis change de côté."],
+          "mistakes": ["Hanches qui reculent ou tombent.", "Épaule qui s'écrase : pousse le sol avec l'avant-bras."],
+          "figure": "side_plank_knees",
+          "video_query": "planche latérale genoux"
         },
         {
           "id": "core_lat_2",
@@ -809,7 +1010,11 @@
           "back_note": "",
           "video_url": "",
           "load_mode": "none",
-          "unilateral": true
+          "unilateral": true,
+          "steps": ["Allongé sur le côté, coude sous l'épaule, jambes tendues, pieds l'un sur l'autre (ou décalés pour plus de stabilité).", "Monte les hanches : corps en ligne droite des pieds à la tête.", "Main du dessus sur la hanche ou tendue vers le plafond.", "Tiens la durée en respirant, puis change de côté."],
+          "mistakes": ["Hanches qui reculent ou tombent.", "Épaule qui s'écrase : pousse le sol avec l'avant-bras."],
+          "figure": "side_plank",
+          "video_query": "planche latérale technique"
         },
         {
           "id": "core_lat_3",
@@ -823,7 +1028,11 @@
           "back_note": "",
           "video_url": "",
           "load_mode": "none",
-          "unilateral": true
+          "unilateral": true,
+          "steps": ["Allongé sur le côté, coude sous l'épaule, jambes tendues, pieds l'un sur l'autre (ou décalés pour plus de stabilité).", "Monte les hanches : corps en ligne droite des pieds à la tête.", "Lève la jambe du dessus d'une vingtaine de centimètres, sans tourner le bassin.", "Tiens, puis change de côté."],
+          "mistakes": ["Hanches qui reculent ou tombent.", "Épaule qui s'écrase : pousse le sol avec l'avant-bras."],
+          "figure": "side_plank_leg",
+          "video_query": "side plank leg raise"
         },
         {
           "id": "core_lat_4",
@@ -837,7 +1046,11 @@
           "back_note": "",
           "video_url": "",
           "load_mode": "none",
-          "unilateral": true
+          "unilateral": true,
+          "steps": ["Allongé sur le côté devant une chaise, coude au sol sous l'épaule.", "Pose le genou de la jambe du dessus sur l'assise. La jambe du dessous reste libre.", "Monte les hanches en appuyant l'intérieur de la cuisse du dessus contre la chaise.", "Tiens la durée, puis change de côté."],
+          "mistakes": ["Hanches qui tombent.", "Chaise instable : cale-la contre un mur."],
+          "figure": "copenhagen_knee",
+          "video_query": "copenhagen plank short lever"
         },
         {
           "id": "core_lat_5",
@@ -851,7 +1064,11 @@
           "back_note": "",
           "video_url": "",
           "load_mode": "none",
-          "unilateral": true
+          "unilateral": true,
+          "steps": ["Même position que la Copenhague genou, mais avec la cheville (intérieur du pied) sur la chaise.", "La jambe du dessus est tendue : le levier est long, c'est beaucoup plus dur.", "Monte les hanches, tiens, puis change de côté."],
+          "mistakes": ["Hanches qui tombent."],
+          "figure": "copenhagen",
+          "video_query": "copenhagen plank"
         }
       ]
     },
@@ -874,7 +1091,11 @@
           "video_url": "",
           "load_mode": "none",
           "unilateral": true,
-          "rep_s": 4
+          "rep_s": 4,
+          "steps": ["À quatre pattes : mains sous les épaules, genoux sous les hanches, dos plat.", "Allonge en même temps un bras devant et la jambe opposée derrière, à l'horizontale.", "Pousse loin avec la main et le talon, sans faire bouger le bassin.", "Reviens et change de côté."],
+          "mistakes": ["Lever la jambe trop haut et cambrer.", "Bassin qui bascule sur le côté."],
+          "figure": "bird_dog",
+          "video_query": "bird dog exercice"
         },
         {
           "id": "anti_rot_2",
@@ -889,7 +1110,11 @@
           "video_url": "",
           "load_mode": "none",
           "unilateral": true,
-          "rep_s": 12
+          "rep_s": 12,
+          "steps": ["À quatre pattes : mains sous les épaules, genoux sous les hanches, dos plat.", "Allonge en même temps un bras devant et la jambe opposée derrière, à l'horizontale.", "Pousse loin avec la main et le talon, sans faire bouger le bassin.", "Tiens 10 secondes en extension en respirant, puis change de côté."],
+          "mistakes": ["Lever la jambe trop haut et cambrer.", "Bassin qui bascule sur le côté."],
+          "figure": "bird_dog_pause",
+          "video_query": "bird dog hold"
         },
         {
           "id": "anti_rot_3",
@@ -902,7 +1127,11 @@
           "cues": ["En haut de pompe, pieds écartés", "Touche l'épaule opposée", "Bassin immobile"],
           "back_note": "",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["En haut de pompe, bras tendus, pieds plus écartés que les hanches.", "Lève une main pour toucher l'épaule opposée, puis repose-la.", "Alterne lentement. Le bassin reste immobile."],
+          "mistakes": ["Bassin qui se balance : écarte davantage les pieds."],
+          "figure": "shoulder_tap",
+          "video_query": "plank shoulder taps"
         },
         {
           "id": "anti_rot_4",
@@ -916,7 +1145,11 @@
           "back_note": "",
           "video_url": "",
           "load_mode": "pair",
-          "start_load_ratio": 0.6
+          "start_load_ratio": 0.6,
+          "steps": ["En haut de pompe, mains sur deux haltères, pieds écartés.", "Tire un haltère vers la hanche, sans tourner le bassin.", "Repose-le doucement, puis l'autre côté."],
+          "mistakes": ["Bassin qui tourne.", "Haltères ronds qui roulent."],
+          "figure": "renegade",
+          "video_query": "renegade row technique"
         },
         {
           "id": "anti_rot_5",
@@ -930,7 +1163,11 @@
           "back_note": "",
           "video_url": "",
           "load_mode": "none",
-          "unilateral": true
+          "unilateral": true,
+          "steps": ["Fixe un élastique sur le côté, à hauteur de poitrine. Place-toi de profil, assez loin pour avoir de la tension.", "Tiens l'élastique à deux mains contre la poitrine, pieds largeur de hanches, genoux souples.", "Pousse les mains droit devant toi : l'élastique veut te faire tourner, ne le laisse pas faire.", "Tiens 2 secondes, ramène les mains. Fais tout un côté, puis l'autre."],
+          "mistakes": ["Tourner le buste vers l'élastique."],
+          "figure": null,
+          "video_query": "pallof press élastique"
         }
       ]
     },
@@ -952,7 +1189,11 @@
           "back_note": "Reste grand : ne te penche pas.",
           "video_url": "",
           "load_mode": "pair",
-          "start_load_ratio": 1.0
+          "start_load_ratio": 1.0,
+          "steps": ["Un haltère dans chaque main, bras le long du corps.", "Tiens-toi grand : épaules basses et en arrière, regard droit devant.", "Marche à petits pas réguliers pendant toute la durée (en rond dans la pièce si besoin).", "Pose les haltères en pliant les jambes, dos droit."],
+          "mistakes": ["Épaules qui montent vers les oreilles.", "Se pencher en avant."],
+          "figure": "farmer",
+          "video_query": "farmer walk technique"
         },
         {
           "id": "carry_2",
@@ -966,7 +1207,11 @@
           "back_note": "Reste grand : ne te penche pas.",
           "video_url": "",
           "load_mode": "pair",
-          "start_load_ratio": 1.0
+          "start_load_ratio": 1.0,
+          "steps": ["Un haltère dans chaque main, bras le long du corps.", "Tiens-toi grand : épaules basses et en arrière, regard droit devant.", "Marche à petits pas réguliers pendant toute la durée (en rond dans la pièce si besoin).", "Pose les haltères en pliant les jambes, dos droit."],
+          "mistakes": ["Épaules qui montent vers les oreilles.", "Se pencher en avant."],
+          "figure": "farmer",
+          "video_query": "farmer walk technique"
         },
         {
           "id": "carry_3",
@@ -980,7 +1225,11 @@
           "back_note": "Reste grand : ne te penche pas.",
           "video_url": "",
           "load_mode": "pair",
-          "start_load_ratio": 1.0
+          "start_load_ratio": 1.0,
+          "steps": ["Un haltère dans chaque main, bras le long du corps.", "Tiens-toi grand : épaules basses et en arrière, regard droit devant.", "Marche à petits pas réguliers pendant toute la durée (en rond dans la pièce si besoin).", "Pose les haltères en pliant les jambes, dos droit."],
+          "mistakes": ["Épaules qui montent vers les oreilles.", "Se pencher en avant."],
+          "figure": "farmer",
+          "video_query": "farmer walk technique"
         },
         {
           "id": "carry_4",
@@ -994,7 +1243,11 @@
           "back_note": "Reste grand : ne te penche pas.",
           "video_url": "",
           "load_mode": "single",
-          "start_load_ratio": 1.0
+          "start_load_ratio": 1.0,
+          "steps": ["Un seul haltère dans une main, l'autre main libre.", "Marche en restant parfaitement droit : ne penche pas du côté de la charge.", "Change de main à mi-temps."],
+          "mistakes": ["Se pencher du côté de l'haltère."],
+          "figure": "suitcase",
+          "video_query": "suitcase carry"
         },
         {
           "id": "carry_5",
@@ -1008,7 +1261,11 @@
           "back_note": "Côtes basses : ne cambre pas.",
           "video_url": "",
           "load_mode": "single",
-          "start_load_ratio": 0.6
+          "start_load_ratio": 0.6,
+          "steps": ["Monte un haltère au-dessus de la tête, bras tendu, biceps près de l'oreille.", "Côtes basses, ventre gainé : ne te cambre pas.", "Marche lentement, change de bras à mi-temps."],
+          "mistakes": ["Bras qui part vers l'avant.", "Dos qui se creuse."],
+          "figure": "overhead_carry",
+          "video_query": "overhead carry dumbbell"
         },
         {
           "id": "carry_6",
@@ -1022,7 +1279,11 @@
           "back_note": "Reste grand : ne te penche pas.",
           "video_url": "",
           "load_mode": "pair",
-          "start_load_ratio": 1.0
+          "start_load_ratio": 1.0,
+          "steps": ["Un haltère dans chaque main, bras le long du corps.", "Tiens-toi grand : épaules basses et en arrière, regard droit devant.", "Marche à petits pas réguliers pendant toute la durée (en rond dans la pièce si besoin).", "Pose les haltères en pliant les jambes, dos droit."],
+          "mistakes": ["Épaules qui montent vers les oreilles.", "Se pencher en avant."],
+          "figure": "farmer",
+          "video_query": "farmer walk technique"
         }
       ]
     },
@@ -1043,7 +1304,11 @@
           "cues": ["Grandes prises uniquement", "Pieds au sol, délesté", "Épaules loin des oreilles"],
           "back_note": "",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Accroche-toi aux grandes prises de la planche, bras tendus.", "Garde les pieds au sol devant toi, jambes pliées, pour enlever une partie de ton poids.", "Épaules loin des oreilles, respire, tiens la durée."],
+          "mistakes": ["Utiliser les petites prises : uniquement les grandes, pour protéger les doigts."],
+          "figure": "hang_feet",
+          "video_query": "dead hang hangboard beginner"
         },
         {
           "id": "hang_2",
@@ -1056,7 +1321,11 @@
           "cues": ["Grandes prises uniquement", "Pouce à côté des doigts", "Descends doucement"],
           "back_note": "",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Accroche-toi aux grandes prises, les quatre doigts bien posés.", "Lève les pieds : tout ton poids est suspendu, bras tendus, corps détendu.", "Respire calmement pendant la durée, puis repose les pieds en douceur."],
+          "mistakes": ["Lâcher d'un coup : repose les pieds.", "Plier les bras."],
+          "figure": "hang",
+          "video_query": "dead hang technique"
         },
         {
           "id": "hang_3",
@@ -1069,7 +1338,11 @@
           "cues": ["Grandes prises uniquement", "Corps détendu", "Respire"],
           "back_note": "",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Accroche-toi aux grandes prises, les quatre doigts bien posés.", "Lève les pieds : tout ton poids est suspendu, bras tendus, corps détendu.", "Respire calmement pendant la durée, puis repose les pieds en douceur."],
+          "mistakes": ["Lâcher d'un coup : repose les pieds.", "Plier les bras."],
+          "figure": "hang",
+          "video_query": "dead hang technique"
         },
         {
           "id": "hang_4",
@@ -1082,7 +1355,11 @@
           "cues": ["Grandes prises uniquement", "Corps détendu", "Respire"],
           "back_note": "",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Accroche-toi aux grandes prises, les quatre doigts bien posés.", "Lève les pieds : tout ton poids est suspendu, bras tendus, corps détendu.", "Respire calmement pendant la durée, puis repose les pieds en douceur."],
+          "mistakes": ["Lâcher d'un coup : repose les pieds.", "Plier les bras."],
+          "figure": "hang",
+          "video_query": "dead hang technique"
         },
         {
           "id": "hang_5",
@@ -1095,7 +1372,11 @@
           "cues": ["Grandes prises uniquement", "Omoplates engagées, épaules basses", "Coudes tendus"],
           "back_note": "",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Suspends-toi bras tendus aux grandes prises.", "Tire les épaules vers le bas, loin des oreilles, sans plier les coudes : ton corps monte un peu.", "Garde cette position active pendant toute la durée."],
+          "mistakes": ["Plier les coudes.", "Relâcher les épaules en cours de route."],
+          "figure": "hang_active",
+          "video_query": "active hang scapular"
         },
         {
           "id": "hang_6",
@@ -1108,7 +1389,11 @@
           "cues": ["Grandes prises uniquement (prises moyennes ≥ 20 mm dès le rang C)", "Omoplates engagées", "Coudes tendus"],
           "back_note": "",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Suspends-toi bras tendus aux grandes prises.", "Tire les épaules vers le bas, loin des oreilles, sans plier les coudes : ton corps monte un peu.", "Garde cette position active pendant toute la durée."],
+          "mistakes": ["Plier les coudes.", "Relâcher les épaules en cours de route."],
+          "figure": "hang_active",
+          "video_query": "active hang scapular"
         }
       ]
     },
@@ -1130,7 +1415,11 @@
           "back_note": "",
           "video_url": "",
           "load_mode": "pair",
-          "start_load_ratio": 0.7
+          "start_load_ratio": 0.7,
+          "steps": ["Debout, un haltère dans chaque main, paumes vers l'avant, bras tendus.", "Coudes collés au corps : ils ne bougent pas.", "Monte les haltères vers les épaules en pliant les coudes, sans élan.", "Redescends en 2 secondes jusqu'aux bras tendus."],
+          "mistakes": ["Balancer le buste.", "Coudes qui avancent."],
+          "figure": "curl",
+          "video_query": "curl biceps haltères technique"
         },
         {
           "id": "curl_2",
@@ -1144,7 +1433,11 @@
           "back_note": "",
           "video_url": "",
           "load_mode": "pair",
-          "start_load_ratio": 0.8
+          "start_load_ratio": 0.8,
+          "steps": ["Debout, un haltère dans chaque main, paumes face à face (pouces vers le haut).", "Coudes collés au corps : ils ne bougent pas.", "Monte les haltères vers les épaules en pliant les coudes, sans élan.", "Redescends en 2 secondes jusqu'aux bras tendus."],
+          "mistakes": ["Balancer le buste.", "Coudes qui avancent."],
+          "figure": "curl_hammer",
+          "video_query": "curl marteau haltères"
         },
         {
           "id": "curl_3",
@@ -1159,7 +1452,12 @@
           "video_url": "",
           "load_mode": "pair",
           "rep_s": 5,
-          "start_load_ratio": 0.7
+          "start_load_ratio": 0.7,
+          "steps": ["Debout, un haltère dans chaque main, paumes vers l'avant, bras tendus.", "Coudes collés au corps : ils ne bougent pas.", "Monte les haltères vers les épaules en pliant les coudes, sans élan.", "Redescends en 3 secondes."],
+          "mistakes": ["Balancer le buste.", "Coudes qui avancent."],
+          "figure": "curl",
+          "figure_tempo": [1, 0.3, 3, 0.3],
+          "video_query": "slow eccentric curl"
         },
         {
           "id": "curl_4",
@@ -1173,7 +1471,11 @@
           "back_note": "",
           "video_url": "",
           "load_mode": "pair",
-          "start_load_ratio": 0.6
+          "start_load_ratio": 0.6,
+          "steps": ["Banc incliné à 45°, assis le dos contre le dossier, bras pendants derrière le buste.", "Monte les haltères sans avancer les coudes.", "Redescends complètement : l'étirement du biceps est voulu."],
+          "mistakes": ["Coudes qui avancent.", "Décoller le dos du banc."],
+          "figure": "curl_incline",
+          "video_query": "incline dumbbell curl"
         }
       ]
     },
@@ -1195,7 +1497,11 @@
           "back_note": "Côtes basses : ne cambre pas.",
           "video_url": "",
           "load_mode": "single",
-          "start_load_ratio": 0.8
+          "start_load_ratio": 0.8,
+          "steps": ["Debout ou assis, tiens un haltère à deux mains au-dessus de la tête.", "Coudes vers le plafond, près de la tête.", "Descends l'haltère derrière la tête en pliant seulement les coudes.", "Remonte jusqu'aux bras tendus."],
+          "mistakes": ["Coudes qui s'écartent.", "Cambrer le dos : côtes basses."],
+          "figure": "overhead_ext",
+          "video_query": "extension triceps haltère au dessus de la tête"
         },
         {
           "id": "triceps_2",
@@ -1209,7 +1515,11 @@
           "back_note": "",
           "video_url": "",
           "load_mode": "pair",
-          "start_load_ratio": 0.6
+          "start_load_ratio": 0.6,
+          "steps": ["Allongé au sol, un haltère dans chaque main, bras tendus au-dessus des épaules.", "Plie seulement les coudes pour descendre les haltères à côté de la tête.", "Les coudes restent pointés vers le plafond.", "Tends les bras pour remonter."],
+          "mistakes": ["Coudes qui partent vers l'arrière ou s'écartent."],
+          "figure": "skullcrusher",
+          "video_query": "extension triceps allongé haltères"
         },
         {
           "id": "triceps_3",
@@ -1222,7 +1532,11 @@
           "cues": ["Mains rapprochées sous la poitrine", "Coudes le long du corps", "Corps gainé"],
           "back_note": "Fesses serrées : le bas du dos ne doit pas creuser.",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Position de pompe, mains rapprochées sous la poitrine (index et pouces forment un losange).", "Coudes le long du corps.", "Descends jusqu'à ce que la poitrine frôle les mains, puis pousse.", "Trop dur ? Pose les genoux au sol ou surélève les mains."],
+          "mistakes": ["Coudes qui s'ouvrent.", "Bas du dos qui creuse."],
+          "figure": "pushup",
+          "video_query": "pompes diamant"
         }
       ]
     },
@@ -1244,7 +1558,11 @@
           "back_note": "",
           "video_url": "",
           "load_mode": "pair",
-          "start_load_ratio": 0.4
+          "start_load_ratio": 0.4,
+          "steps": ["Debout, un haltère léger dans chaque main le long du corps, bras légèrement fléchis.", "Monte les bras sur les côtés jusqu'à l'horizontale, comme pour verser de l'eau.", "Épaules basses : ne les hausse pas vers les oreilles.", "Redescends en 2 secondes."],
+          "mistakes": ["Charge trop lourde et élan.", "Monter plus haut que les épaules."],
+          "figure": "lateral_raise",
+          "video_query": "élévations latérales haltères"
         },
         {
           "id": "lateral_2",
@@ -1259,7 +1577,12 @@
           "video_url": "",
           "load_mode": "pair",
           "rep_s": 5,
-          "start_load_ratio": 0.4
+          "start_load_ratio": 0.4,
+          "steps": ["Debout, un haltère léger dans chaque main le long du corps, bras légèrement fléchis.", "Monte les bras sur les côtés jusqu'à l'horizontale, comme pour verser de l'eau.", "Épaules basses : ne les hausse pas vers les oreilles.", "Monte en 2 secondes, redescends en 3 secondes."],
+          "mistakes": ["Charge trop lourde et élan.", "Monter plus haut que les épaules."],
+          "figure": "lateral_raise",
+          "figure_tempo": [2, 0.3, 3, 0.3],
+          "video_query": "slow lateral raise"
         },
         {
           "id": "lateral_3",
@@ -1273,7 +1596,11 @@
           "back_note": "Dos neutre : côtes basses, bassin ni creusé ni enroulé.",
           "video_url": "",
           "load_mode": "pair",
-          "start_load_ratio": 0.4
+          "start_load_ratio": 0.4,
+          "steps": ["Debout, penche le buste vers l'avant (dos plat, genoux fléchis), haltères sous les épaules.", "Ouvre les bras sur les côtés, coudes légèrement fléchis, jusqu'à l'horizontale.", "Serre les omoplates en haut, puis redescends lentement."],
+          "mistakes": ["Dos rond.", "Lever avec l'élan du buste."],
+          "figure": null,
+          "video_query": "oiseau deltoïde postérieur haltères"
         }
       ]
     },
@@ -1296,7 +1623,11 @@
           "video_url": "",
           "load_mode": "single",
           "unilateral": true,
-          "start_load_ratio": 1.0
+          "start_load_ratio": 1.0,
+          "steps": ["Avant du pied sur une marche, talon dans le vide. Tiens-toi au mur d'une main.", "Un haltère dans l'autre main, l'autre pied replié derrière.", "Descends le talon sous le niveau de la marche, puis monte le plus haut possible sur la pointe.", "Pause 1 seconde en haut. Fais tout un côté, puis l'autre."],
+          "mistakes": ["Rebondir en bas.", "Amplitude partielle."],
+          "figure": "calf",
+          "video_query": "single leg calf raise step"
         }
       ]
     },
@@ -1317,7 +1648,11 @@
           "cues": ["Bras fléchis à 90°", "Corps gainé", "Respire"],
           "back_note": "",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Position de pompe, descends à mi-chemin (coudes à 90°).", "Corps gainé, fesses serrées. Tiens en respirant."],
+          "mistakes": ["Bassin qui tombe."],
+          "figure": "iso_pushup",
+          "video_query": "push up isometric hold"
         }
       ]
     },
@@ -1339,7 +1674,11 @@
           "back_note": "",
           "video_url": "",
           "load_mode": "pair",
-          "start_load_ratio": 0.6
+          "start_load_ratio": 0.6,
+          "steps": ["Debout, haltères en main, coudes collés au corps.", "Plie les coudes à 90° (avant-bras à l'horizontale) et tiens."],
+          "mistakes": ["Se pencher en arrière."],
+          "figure": "iso_curl",
+          "video_query": "isometric bicep curl hold"
         }
       ]
     },
@@ -1361,7 +1700,11 @@
           "back_note": "",
           "video_url": "",
           "load_mode": "pair",
-          "start_load_ratio": 0.3
+          "start_load_ratio": 0.3,
+          "steps": ["Debout, haltères légers, monte les bras sur les côtés à l'horizontale.", "Tiens sans hausser les épaules."],
+          "mistakes": ["Épaules qui montent."],
+          "figure": "iso_lateral",
+          "video_query": "lateral raise hold"
         }
       ]
     },
@@ -1382,7 +1725,11 @@
           "cues": ["Dos plaqué au mur", "Cuisses à l'horizontale", "Genoux au-dessus des chevilles"],
           "back_note": "Bas du dos collé au mur.",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Dos plaqué au mur, descends jusqu'à avoir les cuisses horizontales.", "Genoux au-dessus des chevilles, bas du dos collé au mur. Tiens."],
+          "mistakes": ["Genoux qui dépassent les orteils : avance les pieds."],
+          "figure": "wall_sit",
+          "video_query": "chaise contre le mur"
         }
       ]
     },
@@ -1404,7 +1751,11 @@
           "back_note": "Monte avec les fessiers, pas en creusant le dos.",
           "video_url": "",
           "load_mode": "single",
-          "start_load_ratio": 1.0
+          "start_load_ratio": 1.0,
+          "steps": ["Allongé sur le dos, haltère sur les hanches, monte en pont fessier.", "Tiens en haut, fessiers serrés, sans cambrer."],
+          "mistakes": ["Cambrer le dos."],
+          "figure": "bridge_hold",
+          "video_query": "glute bridge hold"
         }
       ]
     },
@@ -1427,7 +1778,11 @@
           "back_note": "",
           "video_url": "",
           "load_mode": "none",
-          "unilateral": true
+          "unilateral": true,
+          "steps": ["Un genou au sol (sur un coussin), l'autre pied devant, genou à 90°.", "Serre le fessier de la jambe arrière et rentre légèrement le bassin.", "Avance doucement le bassin : l'étirement se sent devant la hanche arrière.", "Buste droit, respire. Change de côté à mi-temps."],
+          "mistakes": ["Cambrer le bas du dos au lieu d'avancer le bassin."],
+          "figure": "low_lunge",
+          "video_query": "étirement fléchisseurs de hanche fente basse"
         },
         {
           "id": "mob_hips_2",
@@ -1440,7 +1795,11 @@
           "cues": ["Les deux genoux à 90°", "Buste grand au-dessus de la jambe avant", "Change de côté à mi-temps"],
           "back_note": "",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Assis au sol, jambe avant pliée à 90° devant toi, tibia parallèle à ton buste.", "Jambe arrière pliée à 90° sur le côté, genou pointé vers l'extérieur.", "Grandis-toi et penche légèrement le buste au-dessus du tibia avant, dos droit.", "À mi-temps, fais pivoter les deux genoux de l'autre côté."],
+          "mistakes": ["Dos rond : garde la poitrine ouverte, appuie-toi sur les mains si besoin."],
+          "figure": null,
+          "video_query": "90 90 hip stretch"
         },
         {
           "id": "mob_hips_3",
@@ -1453,7 +1812,11 @@
           "cues": ["Talons au sol", "Coudes poussent les genoux", "Respire lentement"],
           "back_note": "",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Pieds un peu plus larges que les hanches, pointes vers l'extérieur.", "Descends tout en bas, talons au sol.", "Coudes à l'intérieur des genoux pour les pousser doucement vers l'extérieur.", "Respire lentement. Talons qui décollent ? Pose-les sur un livre."],
+          "mistakes": ["Dos très arrondi : grandis-toi."],
+          "figure": "deep_squat",
+          "video_query": "deep squat hold mobility"
         },
         {
           "id": "mob_hips_4",
@@ -1467,7 +1830,11 @@
           "back_note": "",
           "video_url": "",
           "load_mode": "single",
-          "start_load_ratio": 0.5
+          "start_load_ratio": 0.5,
+          "steps": ["Pieds un peu plus larges que les hanches, pointes vers l'extérieur.", "Descends tout en bas, talons au sol.", "Tiens l'haltère contre la poitrine : il sert de contrepoids pour rester en bas.", "Respire lentement. Talons qui décollent ? Pose-les sur un livre."],
+          "mistakes": ["Dos très arrondi."],
+          "figure": "deep_squat_db",
+          "video_query": "goblet squat hold mobility"
         },
         {
           "id": "mob_hips_5",
@@ -1482,7 +1849,11 @@
           "video_url": "",
           "load_mode": "none",
           "unilateral": true,
-          "rep_s": 4
+          "rep_s": 4,
+          "steps": ["Pieds très écartés, pointes légèrement vers l'extérieur.", "Descends sur une jambe en pliant le genou. L'autre reste tendue, pointe du pied vers le haut.", "Talon de la jambe pliée au sol, buste droit.", "Remonte et passe de l'autre côté."],
+          "mistakes": ["Talon qui décolle.", "Genou qui rentre."],
+          "figure": "cossack",
+          "video_query": "squat cosaque"
         }
       ]
     },
@@ -1504,7 +1875,11 @@
           "cues": ["À quatre pattes", "Enroule puis ouvre le dos lentement", "Suis ta respiration"],
           "back_note": "Mouvement doux, sans forcer en bas du dos.",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["À quatre pattes, mains sous les épaules, genoux sous les hanches.", "En expirant, arrondis le dos vers le plafond et rentre le menton (le chat).", "En inspirant, creuse doucement le dos et lève le regard (la vache).", "Enchaîne lentement, au rythme de la respiration."],
+          "mistakes": ["Forcer en bas du dos : reste dans une amplitude confortable."],
+          "figure": "cat_cow",
+          "video_query": "chat vache exercice"
         },
         {
           "id": "mob_thoracic_2",
@@ -1518,7 +1893,11 @@
           "back_note": "",
           "video_url": "",
           "load_mode": "none",
-          "unilateral": true
+          "unilateral": true,
+          "steps": ["À quatre pattes, une main derrière la tête.", "Amène le coude vers le bras d'appui en tournant le buste.", "Puis ouvre le coude vers le plafond en le suivant du regard.", "Le bassin ne bouge pas. Change de côté à mi-temps."],
+          "mistakes": ["Bouger le bassin au lieu du haut du dos."],
+          "figure": "thoracic_rotation",
+          "video_query": "rotation thoracique quatre pattes"
         }
       ]
     },
@@ -1540,7 +1919,11 @@
           "cues": ["Dos et avant-bras contre le mur", "Glisse les bras vers le haut", "Côtes basses"],
           "back_note": "",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Dos, tête et fesses contre le mur, pieds un peu en avant.", "Bras en W contre le mur : coudes et dos des mains touchent le mur.", "Glisse les bras vers le haut en gardant le contact, jusqu'à former un Y.", "Redescends lentement. Côtes basses : le bas du dos ne décolle pas."],
+          "mistakes": ["Bas du dos qui décolle du mur."],
+          "figure": "wall_slides",
+          "video_query": "wall slides épaules"
         },
         {
           "id": "mob_shoulders_2",
@@ -1553,7 +1936,11 @@
           "cues": ["Grandes prises uniquement", "Pieds au sol si besoin", "Laisse les épaules s'étirer"],
           "back_note": "",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Accroche-toi aux grandes prises, pieds au sol si besoin.", "Relâche les épaules : laisse ton poids étirer les épaules et le dos.", "Respire lentement."],
+          "mistakes": ["Forcer si l'épaule fait mal : reste délesté."],
+          "figure": "hang",
+          "video_query": "passive hang shoulder"
         },
         {
           "id": "mob_shoulders_3",
@@ -1566,7 +1953,11 @@
           "cues": ["Bras tendus, prise large", "Passe l'élastique derrière toi", "Côtes basses"],
           "back_note": "",
           "video_url": "",
-          "load_mode": "none"
+          "load_mode": "none",
+          "steps": ["Tiens un élastique (ou un bâton) à deux mains, prise très large, bras tendus devant toi.", "Monte les bras au-dessus de la tête puis passe-les derrière toi, toujours tendus.", "Reviens par le même chemin. Plus la prise est large, plus c'est facile."],
+          "mistakes": ["Plier les coudes pour passer."],
+          "figure": "dislocates",
+          "video_query": "shoulder dislocates élastique"
         }
       ]
     },
@@ -1589,7 +1980,11 @@
           "back_note": "",
           "video_url": "",
           "load_mode": "none",
-          "unilateral": true
+          "unilateral": true,
+          "steps": ["Face au mur, pied avant à quelques centimètres du mur, l'autre pied derrière.", "Avance le genou pour qu'il touche le mur, sans décoller le talon.", "Facile ? Recule le pied d'un centimètre. Fais des va-et-vient lents.", "Change de côté à mi-temps."],
+          "mistakes": ["Talon qui décolle."],
+          "figure": "knee_wall",
+          "video_query": "knee to wall ankle mobility"
         }
       ]
     },
@@ -1612,7 +2007,11 @@
           "back_note": "Penche depuis les hanches, pas en arrondissant le dos.",
           "video_url": "",
           "load_mode": "none",
-          "unilateral": true
+          "unilateral": true,
+          "steps": ["Debout, pose le talon sur une chaise, jambe tendue, pointe du pied vers le haut.", "Grandis-toi, puis penche le buste vers l'avant depuis les hanches, dos long.", "Arrête dès que tu sens l'étirement derrière la cuisse. Respire et tiens.", "Change de jambe à mi-temps."],
+          "mistakes": ["Arrondir le dos pour aller plus loin."],
+          "figure": "ham_chair",
+          "video_query": "étirement ischio jambiers chaise"
         }
       ]
     }
@@ -1621,104 +2020,173 @@
     "HAUT": [
       {
         "name": "Cercles de bras",
-        "seconds": 30
+        "seconds": 30,
+        "figure": "arm_circles",
+        "steps": ["Debout, bras tendus sur les côtés.", "Fais de petits cercles vers l'avant, puis de plus en plus grands.", "À mi-temps, change de sens."],
+        "video_query": "Cercles de bras"
       },
       {
         "name": "Pompes scapulaires",
-        "seconds": 30
+        "seconds": 30,
+        "figure": "scap_pushup",
+        "steps": ["En haut de pompe, bras tendus (ou genoux au sol).", "Sans plier les coudes, rapproche les omoplates : la poitrine descend de quelques centimètres.", "Puis écarte-les en poussant le sol : le haut du dos s'arrondit."],
+        "video_query": "scapular push up"
       },
       {
         "name": "Rotations thoraciques debout",
-        "seconds": 30
+        "seconds": 30,
+        "figure": "torso_rotation",
+        "steps": ["Debout, pieds largeur de hanches, bras croisés devant la poitrine.", "Tourne le buste à gauche puis à droite. Le bassin reste face à l'avant.", "Mouvement fluide, sans forcer."],
+        "video_query": "Rotations thoraciques debout"
       },
       {
         "name": "Rowing à vide, lent",
-        "seconds": 30
+        "seconds": 30,
+        "figure": "row_bw",
+        "steps": ["Position du rowing un bras, sans charge.", "Tire lentement le coude vers la hanche, puis redescends.", "Change de bras à mi-temps."],
+        "video_query": "Rowing à vide"
       },
       {
         "name": "Série d'approche du 1er exercice, facile",
-        "seconds": 60
+        "seconds": 60,
+        "figure": null,
+        "steps": ["Fais 8 à 10 répétitions faciles du premier exercice du bloc principal.", "Version plus facile ou charge plus légère : le but est de préparer le mouvement, pas de te fatiguer."],
+        "video_query": "Série d'approche du 1er exercice"
       }
     ],
     "BAS": [
       {
         "name": "Chat-vache",
-        "seconds": 30
+        "seconds": 30,
+        "figure": "cat_cow",
+        "steps": ["À quatre pattes, mains sous les épaules, genoux sous les hanches.", "En expirant, arrondis le dos vers le plafond et rentre le menton (le chat).", "En inspirant, creuse doucement le dos et lève le regard (la vache).", "Enchaîne lentement, au rythme de la respiration."],
+        "video_query": "chat vache exercice"
       },
       {
         "name": "Pont fessier au poids du corps",
-        "seconds": 30
+        "seconds": 30,
+        "figure": "bridge_bw",
+        "steps": ["Allongé sur le dos, genoux pliés, pieds à plat près des fesses.", "Pousse dans les talons et monte les hanches.", "Serre les fessiers en haut, redescends lentement."],
+        "video_query": "Pont fessier au poids du corps"
       },
       {
         "name": "Squat au poids du corps, lent",
-        "seconds": 45
+        "seconds": 45,
+        "figure": "squat_bw",
+        "steps": ["Pieds largeur d'épaules, bras tendus devant pour l'équilibre.", "Descends lentement, hanches en arrière, talons au sol.", "Remonte. Va un peu plus bas à chaque répétition."],
+        "video_query": "Squat au poids du corps"
       },
       {
         "name": "Fente arrière alternée",
-        "seconds": 45
+        "seconds": 45,
+        "figure": "lunge",
+        "steps": ["Debout, pieds largeur de hanches, mains sur les hanches.", "Fais un grand pas en arrière et descends le genou arrière vers le sol, sans le cogner.", "Le genou avant reste au-dessus du pied, le buste droit.", "Pousse avec le talon avant pour revenir debout. Alterne les jambes."],
+        "video_query": "Fente arrière alternée"
       },
       {
         "name": "Cercles de hanches",
-        "seconds": 30
+        "seconds": 30,
+        "figure": "hip_circles",
+        "steps": ["Debout, mains sur les hanches, pieds largeur d'épaules.", "Dessine de grands cercles avec le bassin.", "Change de sens à mi-temps."],
+        "video_query": "Cercles de hanches"
       }
     ],
     "RECAL": [
       {
         "name": "Chat-vache",
-        "seconds": 45
+        "seconds": 45,
+        "figure": "cat_cow",
+        "steps": ["À quatre pattes, mains sous les épaules, genoux sous les hanches.", "En expirant, arrondis le dos vers le plafond et rentre le menton (le chat).", "En inspirant, creuse doucement le dos et lève le regard (la vache).", "Enchaîne lentement, au rythme de la respiration."],
+        "video_query": "chat vache exercice"
       },
       {
         "name": "Cercles d'épaules",
-        "seconds": 30
+        "seconds": 30,
+        "figure": null,
+        "steps": ["Debout, bras le long du corps.", "Monte les épaules vers les oreilles, roule-les vers l'arrière, puis vers le bas.", "Grands cercles lents. Change de sens à mi-temps."],
+        "video_query": "shoulder rolls"
       },
       {
         "name": "Bird-dog lent",
-        "seconds": 45
+        "seconds": 45,
+        "figure": "bird_dog",
+        "steps": ["À quatre pattes : mains sous les épaules, genoux sous les hanches, dos plat.", "Allonge en même temps un bras devant et la jambe opposée derrière, à l'horizontale.", "Pousse loin avec la main et le talon, sans faire bouger le bassin.", "Reviens et change de côté."],
+        "video_query": "Bird-dog lent"
       },
       {
         "name": "Respiration diaphragmatique",
-        "seconds": 60
+        "seconds": 60,
+        "figure": "breathing",
+        "steps": ["Allongé sur le dos, genoux pliés, une main sur le ventre.", "Inspire par le nez en gonflant le ventre : la main monte, la poitrine bouge peu.", "Expire lentement par la bouche."],
+        "video_query": "Respiration diaphragmatique"
       }
     ]
   },
   "cooldown": [
     {
       "name": "Respiration 4-6 (inspire 4 s, expire 6 s), allongé",
-      "seconds": 60
+      "seconds": 60,
+      "figure": "breathing",
+      "steps": ["Allongé sur le dos, genoux pliés.", "Inspire par le nez pendant 4 secondes en gonflant le ventre.", "Expire par la bouche pendant 6 secondes.", "Laisse le corps devenir lourd sur le sol."],
+      "video_query": "Respiration 4-6 (inspire 4 s"
     },
     {
       "name": "Respiration crocodile, sur le ventre",
-      "seconds": 60
+      "seconds": 60,
+      "figure": "crocodile",
+      "steps": ["Allongé sur le ventre, front posé sur les mains.", "Inspire en envoyant l'air dans le bas du dos et les flancs : le bas du dos se soulève.", "Expire lentement. Idéal pour détendre le bas du dos."],
+      "video_query": "crocodile breathing"
     }
   ],
   "recovery": [
     {
       "name": "Respiration crocodile, sur le ventre",
-      "seconds": 90
+      "seconds": 90,
+      "figure": "crocodile",
+      "steps": ["Allongé sur le ventre, front posé sur les mains.", "Inspire en envoyant l'air dans le bas du dos et les flancs : le bas du dos se soulève.", "Expire lentement. Idéal pour détendre le bas du dos."],
+      "video_query": "crocodile breathing"
     },
     {
       "name": "Chat-vache, très doux",
-      "seconds": 90
+      "seconds": 90,
+      "figure": "cat_cow",
+      "steps": ["Petite amplitude, toujours sans douleur.", "À quatre pattes, mains sous les épaules, genoux sous les hanches.", "En expirant, arrondis le dos vers le plafond et rentre le menton (le chat).", "En inspirant, creuse doucement le dos et lève le regard (la vache).", "Enchaîne lentement, au rythme de la respiration."],
+      "video_query": "Chat-vache"
     },
     {
       "name": "Bird-dog lent, petite amplitude",
-      "seconds": 90
+      "seconds": 90,
+      "figure": "bird_dog",
+      "steps": ["Petite amplitude : bras et jambe à mi-hauteur suffisent.", "À quatre pattes : mains sous les épaules, genoux sous les hanches, dos plat.", "Allonge en même temps un bras devant et la jambe opposée derrière, à l'horizontale.", "Pousse loin avec la main et le talon, sans faire bouger le bassin.", "Reviens et change de côté."],
+      "video_query": "Bird-dog lent"
     },
     {
       "name": "90/90 des hanches",
-      "seconds": 90
+      "seconds": 90,
+      "figure": null,
+      "steps": ["Assis au sol, jambe avant pliée à 90° devant toi, tibia parallèle à ton buste.", "Jambe arrière pliée à 90° sur le côté, genou pointé vers l'extérieur.", "Grandis-toi et penche légèrement le buste au-dessus du tibia avant, dos droit.", "À mi-temps, fais pivoter les deux genoux de l'autre côté."],
+      "video_query": "90 90 hip stretch"
     },
     {
       "name": "Genou au mur",
-      "seconds": 60
+      "seconds": 60,
+      "figure": "knee_wall",
+      "steps": ["Face au mur, pied avant à quelques centimètres du mur, l'autre pied derrière.", "Avance le genou pour qu'il touche le mur, sans décoller le talon.", "Facile ? Recule le pied d'un centimètre. Fais des va-et-vient lents.", "Change de côté à mi-temps."],
+      "video_query": "Genou au mur"
     },
     {
       "name": "Étirement doux jambe sur une chaise",
-      "seconds": 60
+      "seconds": 60,
+      "figure": "ham_chair",
+      "steps": ["Étirement léger, jamais douloureux.", "Debout, pose le talon sur une chaise, jambe tendue, pointe du pied vers le haut.", "Grandis-toi, puis penche le buste vers l'avant depuis les hanches, dos long.", "Arrête dès que tu sens l'étirement derrière la cuisse. Respire et tiens.", "Change de jambe à mi-temps."],
+      "video_query": "Étirement doux jambe sur une chaise"
     },
     {
       "name": "Respiration 4-6, allongé genoux pliés",
-      "seconds": 120
+      "seconds": 120,
+      "figure": "breathing",
+      "steps": ["Allongé sur le dos, genoux pliés.", "Inspire par le nez pendant 4 secondes.", "Expire par la bouche pendant 6 secondes."],
+      "video_query": "Respiration 4-6"
     }
   ]
 }

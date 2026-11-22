@@ -258,3 +258,26 @@ nav.bottom a.on { color: var(--cyan); text-shadow: 0 0 8px var(--cyan); }
   .sys .caret { animation: none; }
 }
 .reduced .win, .reduced .glitch, .reduced .cine .t { animation: none !important; }
+
+/* ---------------------------------------------------------------- exercise figures */
+.fig { width: 100%; height: auto; display: block; overflow: visible; }
+.fig polyline, .fig path { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.fig .fn polyline, .fig .fn path { stroke: var(--cyan); stroke-width: 3.4; }
+.fig .fn { filter: drop-shadow(0 0 2.5px rgba(56, 214, 255, 0.75)); }
+.fig .ff polyline, .fig .ff path { stroke: var(--blue); stroke-width: 3; opacity: 0.75; }
+.fig .fh { fill: rgba(56, 214, 255, 0.18); stroke: var(--cyan); stroke-width: 2.4; }
+.fig .fg { stroke: rgba(127, 163, 194, 0.5); stroke-width: 1; stroke-dasharray: 3 3; }
+.fig .fp { fill: rgba(127, 163, 194, 0.1); stroke: rgba(127, 163, 194, 0.6); stroke-width: 1.5; }
+.fig .fd rect { fill: var(--gold); }
+.fig .fb { fill: none; stroke: var(--ok); stroke-width: 1.5; stroke-dasharray: 4 3; }
+.lite .fig .fn { filter: none; }
+.fig-box { border: 1px solid rgba(56, 214, 255, 0.25); background: rgba(4, 7, 13, 0.55); padding: 4px 8px; margin: 10px 0 4px; }
+.fig-box.small svg { max-height: 140px; }
+.fig-box.large svg { max-height: 240px; }
+.fig-box svg { margin: 0 auto; }
+.howto-btn { min-height: 40px; padding: 6px 14px; font-size: 13px; margin-top: 8px; }
+.howto-h { font-family: var(--f-title); font-size: 12px; letter-spacing: 0.14em; color: var(--cyan); margin: 14px 0 4px; }
+.howto-h.warn { color: var(--warn); }
+.howto-steps, .howto-mistakes { margin: 0; padding-left: 20px; font-size: 15px; }
+.howto-steps li + li, .howto-mistakes li + li { margin-top: 6px; }
+a.btn { text-decoration: none; }

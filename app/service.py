@@ -1,6 +1,7 @@
 """Glue between the database and the pure engine. No game rule lives here, only loading and saving."""
 from __future__ import annotations
 
+import hashlib
 import json
 import os
 import random
@@ -32,15 +33,64 @@ class GameError(Exception):
         self.status = status
 
 
-def ensure_data_files(data_dir: Path = S.DATA_DIR, defaults_dir: Path = S.DEFAULTS_DIR) -> None:
-    """Copy program JSON files into the data volume when missing. Never overwrite user edits."""
+# sha256 of program files shipped before the manifest existed (phase 1), so they can be updated safely.
+LEGACY_DEFAULTS = {
+    "config": {"a7196d6f4442dc4588727839bd6b8423e58c99888f4eda9a55e7f42a342578c3"},
+    "skills": {"c4254d459bfa5baeef95219557acabf39c61340004013999235aae1a5bf01aa5"},
+    "ranks": {"d76ade5cd11361aeec5298d82b6687cac83aded24fe258888675c5a00ae8e2d8"},
+    "titles": {"83127b8f47caf50b98366945a9d6001741066bb555c1308b8648067cce9824fc"},
+    "system_messages": {"c1b5d270bafea30abb0204082284158fdc074c2388c1a8c903ad73b085dd808e"},
+}
+MANIFEST = ".defaults.json"
+
+
+def _sha(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def ensure_data_files(data_dir: Path = S.DATA_DIR, defaults_dir: Path = S.DEFAULTS_DIR) -> list[str]:
+    """Install or update the program JSON files in the data volume.
+
+    A file is replaced by the new default only if the player never edited it (its hash matches the
+    default installed last time). An edited file is kept; the new default is written next to it as
+    `<name>.nouveau.json`. Returns a log of what happened.
+    """
     data_dir.mkdir(parents=True, exist_ok=True)
     if not os.access(data_dir, os.W_OK):
         raise RuntimeError(f"{data_dir} n'est pas accessible en écriture. Sur le serveur : sudo chown -R 1000:1000 data")
+    if data_dir.resolve() == defaults_dir.resolve():
+        return []                                   # development: the repo's data/ is the source
+    man_path = data_dir / MANIFEST
+    try:
+        manifest = json.loads(man_path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        manifest = {}
+    log = []
     for name in S.DATA_FILES:
-        dst, src = data_dir / f"{name}.json", defaults_dir / f"{name}.json"
-        if not dst.exists() and src.exists() and src.resolve() != dst.resolve():
+        src, dst = defaults_dir / f"{name}.json", data_dir / f"{name}.json"
+        if not src.exists():
+            continue
+        new = _sha(src)
+        if not dst.exists():
             shutil.copyfile(src, dst)
+            log.append(f"{name}: installé")
+        else:
+            cur = _sha(dst)
+            installed = manifest.get(name) or (cur if cur in LEGACY_DEFAULTS.get(name, ()) else None)
+            if cur == new:
+                pass
+            elif cur == installed:
+                shutil.copyfile(src, dst)
+                log.append(f"{name}: mis à jour")
+            else:
+                shutil.copyfile(src, data_dir / f"{name}.nouveau.json")
+                log.append(f"{name}: modifié par le joueur, conservé (nouvelle version : {name}.nouveau.json)")
+                continue
+        manifest[name] = new
+    man_path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+    for line in log:
+        print(f"[data] {line}", flush=True)
+    return log
 
 
 def now() -> datetime:
@@ -499,7 +549,9 @@ class Game:
                     reason = "niveau"
                 variants.append({"level": v["level"], "name": v["name"], "equipment": v["equipment"],
                                  "type": v["type"], "range": v["range"], "lock": reason,
-                                 "current": v["level"] == st["level"]})
+                                 "current": v["level"] == st["level"], "cues": v["cues"],
+                                 "back_note": v.get("back_note", ""), "unilateral": bool(v.get("unilateral")),
+                                 **generator.howto(v)})
             out.append({"id": fid, "name": fam["name"], "category": fam["category"], "level": st["level"],
                         "max_level": len(fam["variants"]), "load": st["load"], "target": st["target"],
                         "zone": bool(fam.get("zone")), "variants": variants})
